@@ -4,9 +4,10 @@ import { Event } from "@/app/lib/definitions";
 interface EventsListProps {
   events: Event[];
   onSelectEvent: (event: Event) => void;
+  selectedEvent: Event | null;
 }
 
-const EventsList: React.FC<EventsListProps> = ({ events, onSelectEvent }) => {
+const EventsList: React.FC<EventsListProps> = ({ events, onSelectEvent, selectedEvent }) => {
   // Function to format a single date
   const formatDate = (time: string) => {
     const date = new Date(time);
@@ -26,7 +27,9 @@ const EventsList: React.FC<EventsListProps> = ({ events, onSelectEvent }) => {
         return (
           <li
             key={event.id}
-            className="cursor-pointer flex items-center"
+            className={`cursor-pointer flex items-center p-2  ${
+              selectedEvent?.id === event.id ? "bg-gray-100 " : "hover:bg-gray-50"
+            }`}
             onClick={() => onSelectEvent(event)}
           >
             {/* Date Section */}
