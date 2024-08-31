@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <section className='p-24'>
+    <section className='px-24'>
       <div className='container'>
         <h1 className='mb-12 text-3xl font-bold'>home page</h1>
         <p className='max-w-lg'>

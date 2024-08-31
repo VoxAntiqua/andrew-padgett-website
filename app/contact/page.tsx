@@ -1,4 +1,5 @@
 export default function Contact() {
+    
     return (
       <section className='py-12'>
         <div className='container'>
