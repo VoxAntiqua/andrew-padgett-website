@@ -9,7 +9,7 @@ interface EventDetailsProps {
 const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
   return (
     <motion.div
-      className="w-1/2"
+      className="w-1/2 max-h-[calc(100vh-4rem)] overflow-y-auto p-4"  // Add max height and scrolling
       initial={{ opacity: 0 }}  // Initial state: hidden
       animate={{ opacity: 1 }}  // Animate to: fully visible
       exit={{ opacity: 0 }}     // Exit state: hidden again
