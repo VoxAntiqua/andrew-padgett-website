@@ -18,7 +18,7 @@ const EventsList: React.FC<EventsListProps> = ({ events, onSelectEvent, selected
   };
 
   return (
-    <ul className="w-1/2 space-y-4 max-h-[calc(100vh-17rem)] overflow-y-auto "> {/* Set max height and add scrolling */}
+    <ul className="w-1/2 space-y-4 max-h-[calc(100vh-17rem)] overflow-y-auto scrollbar-hidden">
       {events.map((event) => {
         const dates = event.timesLocations.map((tl) => formatDate(tl.time));
         const firstDate = dates[0];
@@ -27,8 +27,8 @@ const EventsList: React.FC<EventsListProps> = ({ events, onSelectEvent, selected
         return (
           <li
             key={event.id}
-            className={`cursor-pointer flex items-center p-2  ${
-              selectedEvent?.id === event.id ? "bg-slate-100 " : "hover:bg-slate-50"
+            className={`cursor-pointer flex items-center p-2 ${
+              selectedEvent?.id === event.id ? "bg-slate-100" : "hover:bg-slate-50"
             }`}
             onClick={() => onSelectEvent(event)}
           >
@@ -61,8 +61,8 @@ const EventsList: React.FC<EventsListProps> = ({ events, onSelectEvent, selected
 
             {/* Event Details Section */}
             <div className="ml-4 flex flex-col justify-center">
-              <h3 className="font-bold text-lg">{event.title}</h3>
-              <p className="text-slate-600">{event.ensemble.name}</p>
+              <h3 className="font-bold text-lg line-clamp-1">{event.title}</h3>
+              <p className="text-slate-600 line-clamp-1">{event.ensemble.name}</p>
             </div>
           </li>
         );
