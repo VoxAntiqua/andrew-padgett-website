@@ -18,7 +18,7 @@ const EventsList: React.FC<EventsListProps> = ({ events, onSelectEvent, selected
   };
 
   return (
-    <ul className="w-1/2 space-y-4 max-h-[calc(100vh-17rem)] overflow-y-auto pr-4"> {/* Set max height and add scrolling */}
+    <ul className="w-1/2 space-y-4 max-h-[calc(100vh-17rem)] overflow-y-auto "> {/* Set max height and add scrolling */}
       {events.map((event) => {
         const dates = event.timesLocations.map((tl) => formatDate(tl.time));
         const firstDate = dates[0];

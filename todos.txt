@@ -1,0 +1,15 @@
+Ensure vertical divider in Calendar is centered
+Indicate path by styling navbar links
+Style header
+Style footer
+Style home splash
+Format calendar entry details
+Add banner image to calendar entry details
+Implement about page
+Implement listen page
+Implement press page
+Implement contact page
+Find a way to add cities to event list entries
+Create past events section
+Add gallery page
+Implement mobile layout
