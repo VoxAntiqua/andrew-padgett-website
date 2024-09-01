@@ -9,6 +9,10 @@ export type Event = {
     director: string;
     description: string;
     url: string;
+    image?: {
+        path: string;
+        alt: string;
+    }
     timesLocations: TimeLocation[]
 }
 
