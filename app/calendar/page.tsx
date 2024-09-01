@@ -24,7 +24,7 @@ export default function Calendar() {
           <EventsList events={sortedEvents} onSelectEvent={setSelectedEvent} selectedEvent={selectedEvent} />
 
           {/* Vertical Divider */}
-          <div className="border-l border-gray-300 mx-8 h-auto self-stretch"></div>
+          <div className="border-l border-slate-400 mx-8 h-auto self-stretch"></div>
 
           {/* Right Side: Event Details with fade-in effect */}
           {selectedEvent && (

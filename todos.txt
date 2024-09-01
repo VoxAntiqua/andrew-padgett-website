@@ -1,5 +1,4 @@
 Ensure vertical divider in Calendar is centered
-Indicate path by styling navbar links
 Style header
 Style footer
 Style home splash
