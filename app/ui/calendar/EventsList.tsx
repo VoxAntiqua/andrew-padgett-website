@@ -29,7 +29,7 @@ const EventsList: React.FC<EventsListProps> = ({ events, onSelectEvent, selected
           <li
             key={event.id}
             className={`cursor-pointer flex items-center p-2 ${
-              selectedEvent?.id === event.id ? "bg-slate-100" : "hover:bg-slate-50"
+              selectedEvent?.id === event.id ? "bg-slate-100 shadow-sm" : "hover:bg-slate-50"
             }`}
             onClick={() => onSelectEvent(event)}
           >

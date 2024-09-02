@@ -3,6 +3,7 @@ import { Event } from "@/app/lib/definitions";
 import { motion } from "framer-motion";
 import Image from "next/image";  // Import Image from Next.js
 import { ibarra } from "../fonts";
+import TimeLocationBlock from "./TimeLocationBlock";
 
 interface EventDetailsProps {
   event: Event;
@@ -19,7 +20,7 @@ const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
     >
       {/* Event Image with title and ensemble name overlay */}
       {event.image && (
-  <div className="relative w-full mb-4">
+  <div className="relative w-full mb-4 shadow-lg">
     <Image
       src={event.image.path}
       alt={event.image.alt}
@@ -51,12 +52,9 @@ const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
           More Info
         </a>
       </p>
-      <h3 className="text-lg font-semibold mt-6">Times & Locations:</h3>
-      <ul className="list-disc pl-6">
+      <ul className="mt-6 space-y-4">
         {event.timesLocations.map((tl, index) => (
-          <li key={index}>
-            <strong>{new Date(tl.time).toLocaleString()}</strong> at {tl.location.join(", ")}
-          </li>
+          <TimeLocationBlock key={index} time={tl.time} location={tl.location} />
         ))}
       </ul>
     </motion.div>
