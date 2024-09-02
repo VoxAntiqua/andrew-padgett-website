@@ -1,5 +1,6 @@
 import React from "react";
 import { Event } from "@/app/lib/definitions";
+import { formatEventLocations } from "@/app/lib/utils";
 
 interface EventsListProps {
   events: Event[];
@@ -63,6 +64,7 @@ const EventsList: React.FC<EventsListProps> = ({ events, onSelectEvent, selected
             <div className="ml-4 flex flex-col justify-center">
               <h3 className="font-bold text-lg line-clamp-1">{event.title}</h3>
               <p className="text-slate-600 line-clamp-1">{event.ensemble.name}</p>
+              <p className="text-slate-600 line-clamp-1">{formatEventLocations(event)}</p>
             </div>
           </li>
         );
