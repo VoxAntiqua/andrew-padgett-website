@@ -48,8 +48,8 @@ const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
       
       <p className="mt-4">{event.description}</p>
       <p className="mt-4">
-        <a href={event.url} className="text-blue-500 underline">
-          More Info
+        <a href={event.url} className="text-blue-900 underline">
+          Learn more
         </a>
       </p>
       <ul className="mt-6 space-y-4">

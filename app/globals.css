@@ -12,3 +12,18 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Ensure the header is positioned on top */
+header {
+    position: relative; /* Allows content to appear below */
+    z-index: 10; /* Ensure it's above the image */
+  }
+  
+  /* Remove margins for full image coverage */
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }

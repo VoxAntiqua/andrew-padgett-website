@@ -1,15 +1,16 @@
+import Image from "next/image"; // Import Image from Next.js
+
 export default function Home() {
   return (
-    <section className='px-24'>
-      <div className='container'>
-        <h1 className='mb-12 text-3xl font-bold'>home page</h1>
-        <p className='max-w-lg'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, sit
-          accusamus tenetur iure laboriosam ab dolor autem mollitia perspiciatis
-          enim est sint facere temporibus tempora dolorem. Laborum veniam
-          officiis eligendi.
-        </p>
-      </div>
+    <section className="relative w-full h-screen">
+      {/* Splash Image */}
+      <Image
+        src="/images/HomeSplash.jpg"
+        alt="Home Splash"
+        layout="fill"  // Fill the entire viewport
+        objectFit="cover"  // Cover the entire viewport
+        priority  // Prioritize loading this image
+      />
     </section>
-  )
+  );
 }
