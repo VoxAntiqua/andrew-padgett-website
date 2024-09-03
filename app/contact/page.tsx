@@ -9,11 +9,18 @@ export default function Contact() {
 
   // Function to handle copying email to clipboard
   const copyEmailToClipboard = () => {
-    const email = "andrew.padgett.88@gmail.com"; // Correct email format
+    const email = "andrew.padgett.88" + "@" + "gmail.com"
     navigator.clipboard.writeText(email).then(() => {
       setShowNotification(true); // Show the notification
       setTimeout(() => setShowNotification(false), 2500); // Hide after 2 seconds
     });
+  };
+
+  // Function to dynamically construct the email address for display
+  const renderEmail = () => {
+    const username = "andrew.padgett.88";
+    const domain = "gmail.com";
+    return `${username} (at) ${domain}`;
   };
 
   return (
@@ -39,7 +46,7 @@ export default function Contact() {
               className="cursor-pointer text-blue-800 hover:underline"
               onClick={copyEmailToClipboard}
             >
-              andrew.padgett.88 (at) gmail.com
+              {renderEmail()} {/* Dynamically rendered email to avoid easy scraping */}
             </span>
           </p>
 
