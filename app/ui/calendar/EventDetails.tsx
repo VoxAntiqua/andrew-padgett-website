@@ -12,7 +12,7 @@ interface EventDetailsProps {
 const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
   return (
     <motion.div
-      className="w-1/2 max-h-[calc(100vh-17rem)] overflow-y-auto p-4 scrollbar-hidden"
+      className="w-1/2 max-h-[calc(100vh-17rem)] overflow-y-auto p-4 "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -48,7 +48,7 @@ const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
       
       <p className="mt-4">{event.description}</p>
       <p className="mt-4">
-        <a href={event.url} className="text-blue-900 underline">
+        <a href={event.url} className="cursor-pointer text-blue-800 hover:underline">
           Learn more
         </a>
       </p>

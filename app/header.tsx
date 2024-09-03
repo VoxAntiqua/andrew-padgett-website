@@ -39,7 +39,7 @@ export default function Header() {
                     href={href}
                     className={`${
                       isActive(href) ? "font-bold text-lg" : "font-normal"
-                    } transition-colors duration-200`}
+                    } transition-colors duration-200 hover:underline`}
                   >
                     {label}
                   </Link>

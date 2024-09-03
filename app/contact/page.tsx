@@ -36,7 +36,7 @@ export default function Contact() {
           <p>
             {/* Clickable email that triggers the copy function */}
             <span
-              className="cursor-pointer text-blue-700 hover:underline"
+              className="cursor-pointer text-blue-800 hover:underline"
               onClick={copyEmailToClipboard}
             >
               andrew.padgett.88 (at) gmail.com
