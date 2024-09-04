@@ -1,14 +1,11 @@
-Ensure vertical divider in Calendar is centered
-Style header
 Style footer
-Style home splash
-Format calendar entry details
-Add banner image to calendar entry details
-Implement about page
 Implement listen page
-Implement press page
-Implement contact page
-Find a way to add cities to event list entries
+Remove press page
+Remove link to home
+Implement gallery page
 Create past events section
 Add gallery page
 Implement mobile layout
+Style links in about page and calendar page (mouseover)
+Add resume pdf to about page
+Implement suspense/loading for event details

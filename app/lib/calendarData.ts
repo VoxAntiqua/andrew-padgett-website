@@ -23,6 +23,28 @@ export const events = [
   },
   {
     id: uuid(),
+    title: 'Mozart Requiem',
+    ensemble: {
+        name: 'Handel and Haydn Society',
+        url: 'https://handelandhaydn.org'
+    },
+    director: 'Jonathan Cohen',
+    description: 'Artistic Director Jonathan Cohen and the superb H+H Chorus “let perpetual light shine” in this stunning season opener, a double feature of moving masterpieces. Performing this heartfelt music with the instruments for which it was composed, the H+H Orchestra and Chorus trace the influence of the opening requiem by Michael Haydn (our namesake’s brother) on Mozart’s main event. Your spirit will be uplifted by sublime soloists, including soprano Lucy Crowe, who “takes us heavenwards with dazzling high notes until we arrive at paradise itself” (The Times).',
+    url: 'https://handelandhaydn.org/concerts/2024-25/mozart-requiem/',
+    image:{
+        path: '/images/HandHRequiem.png',
+        alt: 'Handel and Haydn Society'
+    },
+    timesLocations: [{
+        time: '2024-09-27T19:30',
+        location: ['Symphony Hall', '301 Massachusetts Avenue', 'Boston, MA']
+    },{
+        time: '2024-09-29T15:00',
+        location: ['Symphony Hall', '301 Massachusetts Avenue', 'Boston, MA']
+    }]
+  },
+  {
+    id: uuid(),
     title: 'Return to Earth',
     ensemble: {
       name:'Ampersand',

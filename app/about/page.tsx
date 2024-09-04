@@ -5,7 +5,7 @@ export default function About() {
     <section className="p-8 lg:px-16">
       <div className="container flex flex-wrap gap-6 h-[calc(100vh-14rem)]">
         {/* Image section */}
-        <div className="flex-1 relative h-full">
+        <div className="flex-1 relative h-full ml-8">
           <Image
             src="/images/HeadshotAbout.jpg"
             alt="Headshot of Andrew Padgett"
