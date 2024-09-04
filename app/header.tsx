@@ -29,7 +29,7 @@ export default function Header() {
               {[
                 { href: "/", label: "home" },
                 { href: "/about", label: "about" },
-                { href: "/listen", label: "listen" },
+                { href: "/media", label: "media" },
                 { href: "/calendar", label: "calendar" },
                 { href: "/press", label: "press" },
                 { href: "/contact", label: "contact" },
