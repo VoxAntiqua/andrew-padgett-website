@@ -1,6 +1,7 @@
 import {v1 as uuid} from 'uuid';
+import { Event } from './definitions';
 
-export const events = [
+export const events: Event[] = [
   {
     id: uuid(),
     title: 'Graupner: Wie lieblich sind deine Wohnungen, GWV 1108/42',

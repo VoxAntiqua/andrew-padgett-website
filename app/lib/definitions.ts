@@ -20,3 +20,15 @@ export type TimeLocation = {
     time: string;
     location: string[];
 }
+
+export type AudioClip = {
+    id: string;
+    path: string;
+    title: string;
+    composer: string;
+    collection?: string;
+    monthYear: string;
+    live: boolean;
+    director?: string;
+    featuring?: string;
+}
