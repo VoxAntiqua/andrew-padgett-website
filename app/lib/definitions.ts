@@ -32,3 +32,26 @@ export type AudioClip = {
     director?: string;
     featuring?: string;
 }
+
+export type Album = {
+    id: string;
+    imagePath: string;
+    title: string;
+    subtitle?: string;
+    ensemble: {
+        name: string;
+        url: string;
+    };
+    director: string;
+    year: number;
+    soloTracks?: Track[];
+    spotifyUrl: string;
+    appleMusicUrl: string;
+    amazonUrl: string;
+}
+
+type Track = {
+    number: number;
+    title: string;
+    spotifyUrl: string;
+}
