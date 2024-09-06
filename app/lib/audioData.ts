@@ -4,6 +4,15 @@ import { AudioClip } from './definitions';
 export const audioClips: AudioClip[] = [
     {
         id: uuid(),
+        path: '/audio/AmarDei.mp3',
+        title: 'Amar Dei',
+        composer: 'Bernart Marti',
+        monthYear: 'January 2021',
+        live: false,
+        featuring: 'Niccolo Seligmann, vielle'
+    },
+    {
+        id: uuid(),
         path: '/audio/GerneRecitAria.mp3',
         title: 'Der Heiland fällt vor seinem Vater nieder and Gerne will ich mich bequemen',
         collection: 'Matthäuspassion, BWV 244',

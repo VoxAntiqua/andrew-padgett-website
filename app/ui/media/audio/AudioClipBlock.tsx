@@ -20,7 +20,7 @@ const AudioClipBlock: React.FC<AudioClipBlockProps> = ({ clip }) => {
         customAdditionalControls={[]}
         layout="horizontal"
         autoPlayAfterSrcChange={false}
-        header={<><h3 className="text-md font-bold">{clip.composer}: {clip.title}</h3>
+        header={<><h3 className="text-md font-bold mb-1">{clip.composer}: {clip.title}</h3>
         <p className="text-sm text-gray-600">{clip.collection ? `from ${clip.collection}` : ''}</p>
         <p className="text-sm text-gray-600">{clip.featuring ? `featuring ${clip.featuring}` : ''}</p>
         <p className="text-sm text-gray-600">{clip.director ? `directed by ${clip.director}` : ''}</p>

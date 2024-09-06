@@ -55,3 +55,17 @@ type Track = {
     title: string;
     spotifyUrl: string;
 }
+
+export type Video = {
+    id: string;
+    title: string;
+    composerOrSubtitle?: string;
+    monthYear: string;
+    ensemble: {
+        name: string;
+        url: string;
+    };
+    featuring: string;
+    director?: string;
+    youtubeEmbedCode: string;
+}
