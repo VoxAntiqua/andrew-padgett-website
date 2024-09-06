@@ -31,12 +31,12 @@ const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
     />
     {/* Title overlay */}
     <div className="absolute top-0 left-0 bg-slate-900 bg-opacity-60 text-white p-2 m-2">
-      <h2 className={`${ibarra.className} text-3xl font-semibold`}><a href={event.url}>{event.title}</a></h2>
+      <h2 className={`${ibarra.className} text-3xl font-semibold hover:underline`}><a href={event.url}>{event.title}</a></h2>
     </div>
     {/* Ensemble name overlay */}
     <div className={`${ibarra.className} text-lg absolute bottom-0 right-0 bg-slate-900 bg-opacity-60 text-white p-2 m-2`}>
-      <a href={event.ensemble.url}>
-        with {event.ensemble.name}
+    with <a href={event.ensemble.url} className="hover:underline">
+        {event.ensemble.name}
       </a><br />directed by {event.director}
     </div>
   </div>
@@ -48,7 +48,7 @@ const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
       
       <p className="mt-4">{event.description}</p>
       <p className="mt-4">
-        <a href={event.url} className="cursor-pointer text-blue-800 hover:underline">
+        <a href={event.url} className="cursor-pointer text-blue-700 hover:underline">
           Learn more
         </a>
       </p>

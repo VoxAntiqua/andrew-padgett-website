@@ -20,11 +20,8 @@ interface TimeLocationBlockProps {
     return (
       <li className="bg-slate-100 p-2 shadow-sm">
         <strong className="block">{formattedDate}</strong>
-        <a href={googleMapsUrl} className="text-slate-600 block">
-          {location[0]}
-        </a>
-        <a href={googleMapsUrl} className="text-slate-600 block">
-          {location.slice(1).join(", ")}
+        <a href={googleMapsUrl} className="text-slate-600 block hover:underline">
+          {location[0]}<br/>{location.slice(1).join(", ")}
         </a>
       </li>
     );
