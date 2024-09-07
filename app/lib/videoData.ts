@@ -21,7 +21,18 @@ export const videos:Video[] = [
             name: 'Piffaro',
             url: 'https://www.piffaro.org'
         },
-        featuring: '',
+        featuring: 'Priscilla Herreid, Héloïse Degrugillier, Greg Ingles, and Erik Schmalz, recorders; Jonatan Alvarado, Grant Herreid, and Daniel Swenberg, guitar and vihuela',
         youtubeEmbedCode: 'https://www.youtube.com/embed/i3n2H0iHxuU?si=sdRPz-5TrV0M5Mec&amp;start=1963'
+    }, {
+        id: uuid(),
+        title: 'Warum willst du so zornig sein?',
+        composerOrSubtitle: 'Johann Sebastian Bach, from BWV 101',
+        ensemble: {
+            name: 'Emmanuel Music',
+            url: 'https://www.emmanuelmusic.org'
+        },
+        monthYear: 'October 2023',
+        director: 'Ryan Turner',
+        youtubeEmbedCode: 'https://www.youtube.com/embed/qMdvNJ43_pw?si=xN_Eark6fayIstZg&amp;start=5394'
     }
 ]

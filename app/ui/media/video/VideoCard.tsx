@@ -30,6 +30,9 @@ const VideoCard: React.FC<VideoCardProps> = ({ video }) => {
           {video.featuring && (
             <p className="text-sm text-slate-600 mb-1">Featuring {video.featuring}</p>
           )}
+          {video.director && (
+            <p className="text-sm text-slate-600 mb-1">Directed by {video.director}</p>
+          )}
         </div>
       </div>
     );

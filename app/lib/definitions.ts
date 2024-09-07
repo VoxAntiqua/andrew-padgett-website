@@ -65,7 +65,7 @@ export type Video = {
         name: string;
         url: string;
     };
-    featuring: string;
+    featuring?: string;
     director?: string;
     youtubeEmbedCode: string;
 }
