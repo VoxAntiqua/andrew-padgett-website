@@ -18,24 +18,38 @@ export default function Photos() {
 
   return (
     <div className="container mx-auto py-8">
-      {/* Grid layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {headshotImages.map((image, index) => (
-          <Link key={index} href={image} target="_blank" rel="noopener noreferrer">
-            <div
-              className="relative w-full"
-              style={{ paddingTop: '150%' }} // Adjust the paddingTop to create a portrait layout
-            >
-              <Image
-                src={image}
-                alt={`Headshot ${index + 1}`}
-                fill // Makes the image fill the container
-                style={{ objectFit: 'cover', objectPosition: 'top' }} // Keeps the object-fit and object-position styles
-                className="absolute inset-0 shadow-lg" // Positioning the image correctly
-              />
-            </div>
-          </Link>
-        ))}
+      {/* Centered grid layout */}
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 w-full max-w-screen-xl mx-auto">
+        {/* Large photo on the left */}
+        <div className="relative w-full lg:col-span-2" style={{ paddingTop: '100%' }}>
+          <Image
+            src={headshotImages[0]}
+            alt="Large Headshot"
+            fill
+            style={{ objectFit: 'cover', objectPosition: 'top' }}
+            className="absolute inset-0 shadow-lg"
+          />
+        </div>
+
+        {/* 2x2 grid for remaining photos */}
+        <div className="grid grid-cols-2 gap-4 lg:col-span-2">
+          {headshotImages.slice(1, 5).map((image, index) => (
+            <Link key={index} href={image} target="_blank" rel="noopener noreferrer">
+              <div
+                className="relative w-full"
+                style={{ paddingTop: '100%' }} // Ensures the images are square
+              >
+                <Image
+                  src={image}
+                  alt={`Headshot ${index + 2}`}
+                  fill
+                  style={{ objectFit: 'cover', objectPosition: 'top' }}
+                  className="absolute inset-0 shadow-lg"
+                />
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
