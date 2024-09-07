@@ -20,15 +20,15 @@ export default function Header() {
       <nav className={`py-8 ${isHomePage ? "bg-transparent" : "bg-white"}`}>
         <div className="flex justify-between items-center w-full px-8 lg:px-16">
           {/* Left half with SingerLogo, centered */}
-          <div className="flex justify-center flex-1">
-            <SingerLogo isWhite={isHomePage} /> {/* Control logo text color */}
+          <div className="flex justify-center flex-1"><Link href={'/'}>
+            <SingerLogo isWhite={isHomePage} /> {/* Control logo text color */}</Link>
           </div>
 
           {/* Right half with navigation links, centered */}
           <div className="flex justify-center flex-1">
             <ul className="flex gap-10 items-center">
               {[
-                { href: "/", label: "home" },
+                // { href: "/", label: "home" },
                 { href: "/about", label: "about" },
               ].map(({ href, label }) => (
                 <li key={href}>
@@ -47,7 +47,7 @@ export default function Header() {
               <li className="relative">
                 <button
                   className={`${
-                    isActive("/media") ? "font-bold text-lg" : "font-normal"
+                    pathname.startsWith('/media/') ? "font-bold text-lg" : "font-normal"
                   } transition-colors duration-200 hover:underline`}
                   onClick={() => setDropdownOpen(!isDropdownOpen)}
                 >

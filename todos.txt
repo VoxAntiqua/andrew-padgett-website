@@ -1,11 +1,7 @@
 Style footer
-Implement listen page
 Remove press page
 Remove link to home
-Implement gallery page
 Create past events section
-Add gallery page
 Implement mobile layout
 Style links in about page and calendar page (mouseover)
-Add resume pdf to about page
 Implement suspense/loading for event details
