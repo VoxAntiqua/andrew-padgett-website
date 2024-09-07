@@ -26,7 +26,7 @@ const VideoCard: React.FC<VideoCardProps> = ({ video }) => {
         <div className="p-4 flex-1">
           <h3 className="text-lg font-bold mb-0">{video.title}</h3>
           {video.composerOrSubtitle ? <h4 className='mt-0'>{video.composerOrSubtitle}</h4> : null}
-          <p className="text-sm text-slate-600 my-1">recorded {video.monthYear} with <a href={video.ensemble.url} className='hover:underline text-blue-700'>{video.ensemble.name}</a></p>
+          <p className="text-sm text-slate-600 my-1">recorded {video.monthYear} with <a href={video.ensemble.url} target="_blank" className='hover:underline text-blue-700'>{video.ensemble.name}</a></p>
           {video.featuring && (
             <p className="text-sm text-slate-600 mb-1">Featuring {video.featuring}</p>
           )}
