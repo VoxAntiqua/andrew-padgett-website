@@ -22,6 +22,7 @@ export default function Photos() {
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 w-full max-w-screen-xl mx-auto">
         {/* Large photo on the left */}
         <div className="relative w-full lg:col-span-2" style={{ paddingTop: '100%' }}>
+        <Link href={headshotImages[0]} target="_blank" rel="noopener noreferrer">
           <Image
             src={headshotImages[0]}
             alt="Large Headshot"
@@ -29,6 +30,7 @@ export default function Photos() {
             style={{ objectFit: 'cover', objectPosition: 'top' }}
             className="absolute inset-0 shadow-lg"
           />
+          </Link>
         </div>
 
         {/* 2x2 grid for remaining photos */}
