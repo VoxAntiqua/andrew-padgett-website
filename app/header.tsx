@@ -32,7 +32,7 @@ export default function Header() {
           <div className="lg:hidden flex justify-end flex-1">
             <button
               onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-black focus:outline-none"
+              className={`{isHomePage ? "text-white" : "text-black"} focus:outline-none`}
             >
               {isMobileMenuOpen ? <HiX size={30} /> : <HiMenu size={30} />}
             </button>
@@ -115,7 +115,11 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu Items */}
-        <div className={`lg:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+        <div
+          className={`lg:hidden transition-all duration-300 ease-in-out ${
+            isMobileMenuOpen ? 'max-h-screen opacity-100 translate-y-0' : 'max-h-0 opacity-0 translate-y-[-20px]'
+          } overflow-hidden`}
+        >
           <ul className="flex flex-col gap-4 items-center py-4">
             {[
               { href: "/about", label: "about" },
