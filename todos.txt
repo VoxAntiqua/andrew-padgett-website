@@ -1,3 +1,4 @@
 Create past events section
 Implement mobile layout
 Implement suspense/loading for event details
+Point andrew-padgett.com to andrewpadgett.com

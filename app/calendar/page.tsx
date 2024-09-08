@@ -19,7 +19,7 @@ export default function Calendar() {
   return (
     <section className="p-8 lg:px-16">
       <div className="container">
-        <div className="flex justify-center items-start p-8">
+        <div className="flex justify-center items-start ">
           {/* Left Side: Events List */}
           <EventsList events={sortedEvents} onSelectEvent={setSelectedEvent} selectedEvent={selectedEvent} />
 

@@ -19,7 +19,7 @@ const EventsList: React.FC<EventsListProps> = ({ events, onSelectEvent, selected
   };
 
   return (
-    <ul className="w-1/2 space-y-4 max-h-[calc(100vh-19rem)] overflow-y-auto ">
+    <ul className="w-1/2 space-y-4 max-h-[calc(100vh-15rem)] overflow-y-auto ">
       {events.map((event) => {
         const dates = event.timesLocations.map((tl) => formatDate(tl.time));
         const firstDate = dates[0];
