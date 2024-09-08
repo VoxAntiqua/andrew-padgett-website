@@ -58,7 +58,7 @@ const Press: React.FC = () => {
           </p>
 
           <p>
-            &quot;Soprano Laura Heimes has been a much-loved soloist with Pegasus for some time now, and she was joined by three equally impressive colleagues. Alto Luthien Brackett brought out all the drama of Strozzi's short biblical cantata, "In Medio Maris," describing Jesus's walk on the Sea of Galilee and Peter's less successful follow-up. Tenor Andrew Fuchs' bright, open tenor voice is ideal for this repertoire, and Andrew Padgett provided that dark, precisely focused bass voice sound that seems unique to early music. Individually outstanding, the four singers blended amazingly well as a quartet, and offered a couple of delightful amorous duets along the way (the texts of many of Strozzi's vocal works were by her father, and they're quite spicy, in a literary way).&quot;
+            &quot;Soprano Laura Heimes has been a much-loved soloist with Pegasus for some time now, and she was joined by three equally impressive colleagues. Alto Luthien Brackett brought out all the drama of Strozzi&apos;s short biblical cantata, &quot;In Medio Maris,&quot; describing Jesus&apos;s walk on the Sea of Galilee and Peter&apos;s less successful follow-up. Tenor Andrew Fuchs&apos; bright, open tenor voice is ideal for this repertoire, and Andrew Padgett provided that dark, precisely focused bass voice sound that seems unique to early music. Individually outstanding, the four singers blended amazingly well as a quartet, and offered a couple of delightful amorous duets along the way (the texts of many of Strozzi&apos;s vocal works were by her father, and they&apos;re quite spicy, in a literary way).&quot;
             <br />
             <div className='text-right py-3'>David Raymond, <a href="https://www.rochestercitynewspaper.com/rochester/classical-review-barbaras-venice/Content?oid=2890463" target="_blank" rel="noopener noreferrer">Rochester City Newspaper</a></div>
           </p>
@@ -76,9 +76,9 @@ const Press: React.FC = () => {
           </p>
 
           <p>
-            &quot;Andrew Padgett set down his hurdy-gurdy to sing bass in liquor-themed works of Purcell and Antonio Cesti. The former&apos;s &quot;Bacchus is a Pow&apos;r Divine&quot; showcased Padgett&apos;s powerful baritone and impressive vocal range; a natural actor, he stumbled and hiccupped convincingly through the night&apos;s many entreaties on the importance of good wine without overdoing the gestures.&quot;
+            &quot;Andrew Padgett set down his hurdy-gurdy to sing bass in liquor-themed works of Purcell and Antonio Cesti. The former&apos;s &quot;Bacchus is a Pow&apos;r Divine&quot; set the tone perfectly, while Cesti&apos;s &quot;Caro è di lui l&apos;amore&quot; made for a bright, witty counterpoint. Padgett also put in a gratifyingly rare appearance in concert with Tom Farmer, Mike McMahon and Ben Matthews for a song cycle by Peter J. Fenton, &quot;The Weary Wanderer.&quot;&quot;
             <br />
-            <div className='text-right py-3'>Lee Eisman, <a href="https://www.classical-scene.com/2015/06/14/souls-damour-bemf/" target="_blank" rel="noopener noreferrer">The Boston Music Intelligencer</a></div>
+            <div className='text-right py-3'>Susan Hodge, <a href="https://www.musicweb-international.com/2013/10/hurdy-gurdy/" target="_blank" rel="noopener noreferrer">MusicWeb International</a></div>
           </p>
         </div>
       </div>
