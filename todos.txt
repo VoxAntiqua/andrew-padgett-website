@@ -1,7 +1,3 @@
-Style footer
-Remove press page
-Remove link to home
 Create past events section
 Implement mobile layout
-Style links in about page and calendar page (mouseover)
 Implement suspense/loading for event details
