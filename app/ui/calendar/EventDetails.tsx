@@ -12,7 +12,7 @@ interface EventDetailsProps {
 const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
   return (
     <motion.div
-      className="w-1/2 max-h-[calc(100vh-17rem)] overflow-y-auto p-4 "
+      className="w-1/2 max-h-[calc(100vh-19rem)] overflow-y-auto p-4 "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}

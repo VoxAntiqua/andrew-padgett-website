@@ -25,7 +25,7 @@ export default function Contact() {
 
   return (
     <section className="p-8 lg:px-16">
-      <div className="container flex flex-wrap gap-12 h-[calc(100vh-14rem)]">
+      <div className="container flex flex-wrap gap-12 h-[calc(100vh-15rem)]">
         {/* Image section */}
         <div className="flex-1 relative h-full">
           <Image
