@@ -4,10 +4,12 @@ import Link from "next/link";
 import SingerLogo from "./ui/SingerLogo";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { HiMenu, HiX } from "react-icons/hi"; // Importing icons for hamburger and close button
 
 export default function Header() {
   const pathname = usePathname();
   const [isDropdownOpen, setDropdownOpen] = useState(false); // State to manage dropdown visibility
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false); // State to manage mobile menu visibility
   const isActive = (href: string) => pathname === href;
   const isHomePage = pathname === "/";
 
@@ -17,18 +19,29 @@ export default function Header() {
         isHomePage ? "absolute top-0 left-0 w-full bg-transparent text-white z-10" : "relative bg-white text-black"
       }`}
     >
-      <nav className={`py-8 ${isHomePage ? "bg-transparent" : "bg-white"}`}>
-        <div className="flex justify-between items-center w-full px-8 lg:px-16">
-          {/* Left half with SingerLogo, centered */}
-          <div className="flex justify-center flex-1"><Link href={'/'}>
-            <SingerLogo isWhite={isHomePage} /> {/* Control logo text color */}</Link>
+      <nav className={`py-4 md:py-8 ${isHomePage ? "bg-transparent" : "bg-white"}`}>
+        <div className="flex items-center justify-between w-full px-4 md:px-8 lg:px-16">
+          {/* Centered SingerLogo for mobile view */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 lg:static lg:transform-none flex-1 lg:flex lg:justify-center">
+            <Link href={'/'}>
+              <SingerLogo isWhite={isHomePage} /> {/* Control logo text color */}
+            </Link>
           </div>
 
-          {/* Right half with navigation links, centered */}
-          <div className="flex justify-center flex-1">
+          {/* Hamburger Menu for Mobile */}
+          <div className="lg:hidden flex justify-end flex-1">
+            <button
+              onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+              className="text-black focus:outline-none"
+            >
+              {isMobileMenuOpen ? <HiX size={30} /> : <HiMenu size={30} />}
+            </button>
+          </div>
+
+          {/* Right half with navigation links, centered for large screens */}
+          <div className={`hidden lg:flex justify-center flex-1`}>
             <ul className="flex gap-10 items-center">
               {[
-                // { href: "/", label: "home" },
                 { href: "/about", label: "about" },
               ].map(({ href, label }) => (
                 <li key={href}>
@@ -99,6 +112,34 @@ export default function Header() {
               ))}
             </ul>
           </div>
+        </div>
+
+        {/* Mobile Menu Items */}
+        <div className={`lg:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+          <ul className="flex flex-col gap-4 items-center py-4">
+            {[
+              { href: "/about", label: "about" },
+              { href: "/media/audio", label: "audio" },
+              { href: "/media/video", label: "video" },
+              { href: "/media/discography", label: "discography" },
+              { href: "/media/photos", label: "photos" },
+              { href: "/calendar", label: "calendar" },
+              { href: "/press", label: "press" },
+              { href: "/contact", label: "contact" },
+            ].map(({ href, label }) => (
+              <li key={href}>
+                <Link
+                  href={href}
+                  className={`${
+                    isActive(href) ? "font-bold text-lg" : "font-normal"
+                  } transition-colors duration-200 hover:underline`}
+                  onClick={() => setMobileMenuOpen(false)} // Close menu on link click
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </nav>
 
