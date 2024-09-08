@@ -7,21 +7,46 @@ import EventsList from "../ui/calendar/EventsList";
 import EventDetails from "../ui/calendar/EventDetails";
 
 export default function Calendar() {
-  // Sort the events array by the first date in ascending order
-  const sortedEvents = [...events].sort((a, b) => {
-    const firstDateA = new Date(a.timesLocations[0].time);
-    const firstDateB = new Date(b.timesLocations[0].time);
-    return firstDateA.getTime() - firstDateB.getTime();
-  });
+  // Separate and sort upcoming and past events
+  const currentDate = new Date();
 
-  const [selectedEvent, setSelectedEvent] = useState<Event | null>(sortedEvents[0]);
+  const upcomingEvents = events
+    .filter(event => {
+      const lastDate = new Date(event.timesLocations[event.timesLocations.length - 1].time);
+      return lastDate >= currentDate;
+    })
+    .sort((a, b) => {
+      const firstDateA = new Date(a.timesLocations[0].time);
+      const firstDateB = new Date(b.timesLocations[0].time);
+      return firstDateA.getTime() - firstDateB.getTime();
+    });
+
+  const pastEvents = events
+    .filter(event => {
+      const lastDate = new Date(event.timesLocations[event.timesLocations.length - 1].time);
+      return lastDate < currentDate;
+    })
+    .sort((a, b) => {
+      const lastDateA = new Date(a.timesLocations[a.timesLocations.length - 1].time);
+      const lastDateB = new Date(b.timesLocations[b.timesLocations.length - 1].time);
+      return lastDateB.getTime() - lastDateA.getTime(); // Most recent past events first
+    });
+
+  const [selectedEvent, setSelectedEvent] = useState<Event | null>(
+    upcomingEvents[0] || pastEvents[0] || null
+  );
 
   return (
     <section className="p-8 lg:px-16">
       <div className="container">
-        <div className="flex justify-center items-start ">
+        <div className="flex justify-center items-start">
           {/* Left Side: Events List */}
-          <EventsList events={sortedEvents} onSelectEvent={setSelectedEvent} selectedEvent={selectedEvent} />
+          <EventsList
+            events={upcomingEvents}
+            pastEvents={pastEvents}
+            onSelectEvent={setSelectedEvent}
+            selectedEvent={selectedEvent}
+          />
 
           {/* Vertical Divider */}
           <div className="border-l border-slate-400 mx-8 h-auto self-stretch"></div>

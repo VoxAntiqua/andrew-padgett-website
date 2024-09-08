@@ -10,6 +10,11 @@ interface EventDetailsProps {
 }
 
 const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
+    // Determine if the event is in the past
+    const currentDate = new Date();
+    const lastEventDate = new Date(event.timesLocations[event.timesLocations.length - 1].time);
+    const isPastEvent = lastEventDate < currentDate;
+
   return (
     <motion.div
       className="w-1/2 max-h-[calc(100vh-15rem)] overflow-y-auto p-4 "
@@ -42,9 +47,14 @@ const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
   </div>
 )}
 
-
-
       {/* Other event details below the image */}
+
+      {/* Show this message if the event is in the past */}
+      {isPastEvent && (
+        <div className="mt-4 p-2 bg-red-100 text-red-600">
+          This event has already occurred.
+        </div>
+      )}
       
       <p className="mt-4">{event.description}</p>
       <p className="mt-4">
