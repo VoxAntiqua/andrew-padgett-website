@@ -1,5 +1,6 @@
 import React from 'react';
 import { Album } from '@/app/lib/definitions';
+import Image from 'next/image';
 
 interface AlbumCardProps {
   album: Album;
@@ -9,11 +10,15 @@ const AlbumCard: React.FC<AlbumCardProps> = ({ album }) => {
   return (
     <div className="bg-white shadow-md overflow-hidden max-w-sm flex flex-col justify-between">
       {/* Album Image */}
-      <div className="w-full aspect-square">
-        <img
+      <div className="w-full aspect-w-1 aspect-h-1 relative">
+        <Image
           src={album.imagePath}
           alt={album.title}
-          className="w-full h-full object-cover"
+          fill
+          style={{
+            objectFit: 'cover'
+          }}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
 
