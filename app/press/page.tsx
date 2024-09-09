@@ -76,7 +76,7 @@ const Press: React.FC = () => {
           </p>
 
           <p>
-            &quot;Andrew Padgett set down his hurdy-gurdy to sing bass in liquor-themed works of Purcell and Antonio Cesti. The former&apos;s &quot;Bacchus is a Pow&apos;r Divine&quot; set the tone perfectly, while Cesti&apos;s &quot;Caro è di lui l&apos;amore&quot; made for a bright, witty counterpoint. Padgett also put in a gratifyingly rare appearance in concert with Tom Farmer, Mike McMahon and Ben Matthews for a song cycle by Peter J. Fenton, &quot;The Weary Wanderer.&quot;&quot;
+          &quot;Andrew Padgett set down his hurdy-gurdy to sing bass in liquor-themed works of Purcell and Antonio Cesti. The former&apos;s &quot;Bacchus is a Pow&apos;r Divine&quot; showcased Padgett&apos;s powerful baritone and impressive vocal range; a natural actor, he stumbled and hiccupped convincingly through the night&apos;s many entreaties on the importance of good wine without overdoing the gestures.&quot;
             <br />
             <div className='text-right py-3'>Susan Hodge, <a href="https://www.musicweb-international.com/2013/10/hurdy-gurdy/" target="_blank" rel="noopener noreferrer">MusicWeb International</a></div>
           </p>
