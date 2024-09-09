@@ -71,7 +71,7 @@ const EventsList: React.FC<EventsListProps> = ({ events, pastEvents, onSelectEve
   };
 
   return (
-    <ul className="w-1/2 space-y-4 max-h-[calc(100vh-15rem)] overflow-y-auto">
+    <ul className="w-full space-y-4 max-h-[calc(100vh-15rem)] overflow-y-auto">
       {/* Upcoming Events */}
       {events.map(renderEventItem)}
 

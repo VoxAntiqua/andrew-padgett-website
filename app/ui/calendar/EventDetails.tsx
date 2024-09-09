@@ -17,7 +17,7 @@ const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
 
   return (
     <motion.div
-      className="w-1/2 max-h-[calc(100vh-15rem)] overflow-y-auto p-4 "
+      className="w-full max-h-[calc(100vh-15rem)] overflow-y-auto p-4 "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -55,7 +55,7 @@ const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
           This event has already occurred.
         </div>
       )}
-      
+
       <p className="mt-4">{event.description}</p>
       <p className="mt-4">
         <a href={event.url} target="_blank" className="cursor-pointer text-blue-700 hover:underline">
