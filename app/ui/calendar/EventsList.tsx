@@ -29,7 +29,7 @@ const EventsList: React.FC<EventsListProps> = ({ events, pastEvents, onSelectEve
       <li
         key={event.id}
         className={`cursor-pointer flex items-center p-2 ${
-          selectedEvent?.id === event.id ? "bg-slate-100 shadow-sm" : "hover:bg-slate-50"
+          selectedEvent?.id === event.id ? "lg:bg-slate-100 lg:shadow-sm" : "lg:hover:bg-slate-50"
         }`}
         onClick={() => onSelectEvent(event)}
       >
@@ -71,7 +71,7 @@ const EventsList: React.FC<EventsListProps> = ({ events, pastEvents, onSelectEve
   };
 
   return (
-    <ul className="w-full space-y-4 max-h-[calc(100vh-15rem)] overflow-y-auto">
+    <ul className="w-full space-y-4 lg:max-h-[calc(100vh-15rem)] overflow-y-auto">
       {/* Upcoming Events */}
       {events.map(renderEventItem)}
 
