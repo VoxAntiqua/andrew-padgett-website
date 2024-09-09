@@ -7,8 +7,8 @@ export default function Home() {
       <Image
         src="/images/HomeSplash.jpg"
         alt="Home Splash"
-        layout="fill"  // Fill the entire viewport
-        objectFit="cover"  // Cover the entire viewport
+        fill  // Fill the entire viewport
+        style={{ objectFit: 'cover' }}  // Cover the entire viewport
         priority  // Prioritize loading this image
       />
     </section>

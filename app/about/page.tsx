@@ -2,25 +2,27 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="p-8 lg:px-16">
-      <div className="container flex flex-wrap gap-6 h-[calc(100vh-15rem)]">
+    <section className="p-4 sm:p-6 lg:px-16">
+      <div className="container flex flex-col lg:flex-row gap-4 lg:gap-6 h-auto lg:h-[calc(100vh-15rem)]">
         {/* Image section */}
-        <div className="flex-1 relative h-full ml-8">
+        <div className="relative lg:flex-1 lg:w-[50%] lg:overflow-hidden">
           <Image
             src="/images/HeadshotAbout.jpg"
             alt="Headshot of Andrew Padgett"
             fill
+            sizes="(max-width: 768px) 40vw, (max-width: 1024px) 50vw, 100vw"
+            priority
             style={{
               objectFit: 'cover',
-              objectPosition: 'top'
+              objectPosition: 'top',
             }}
-            
+            className="w-full lg:w-auto lg:h-full"
           />
         </div>
 
-        {/* Text section with scrollbar */}
-        <div className="flex-1 flex flex-col justify-center h-full gap-4 relative mr-8">
-          <div className="container h-full max-h-full overflow-y-auto p-4">
+        {/* Text section */}
+        <div className="flex-1 lg:flex-none lg:w-[50%] lg:overflow-y-auto">
+          <div className="h-auto lg:h-full max-h-full p-4 sm:p-6">
             <p className="mt-4">
               Praised as &quot;splendidly declamatory&quot; (Opera Today) and for his &quot;powerful baritone and impressive vocal range&quot; (Boston Music Intelligencer), bass-baritone Andrew Padgett is an accomplished interpreter of early music from medieval to baroque repertoire. He has worked with several early music luminaries including Masaaki Suzuki, Benjamin Bagby, and Paul O&#39;Dette, and has been featured as a soloist in concert venues worldwide, such as Alice Tully Hall at Lincoln Center, NYC, the Kennedy Center for the Performing Arts in Washington, D.C., and the Esplanade Concert Hall in his hometown, Singapore. He is a frequent collaborator with ensembles such as TENET, Bach Collegium San Diego, Pegasus Early Music, and Piffaro, both as an ensemble artist and a soloist.
             </p>
