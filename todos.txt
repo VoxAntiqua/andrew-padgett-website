@@ -1,4 +1,2 @@
 Implement suspense/loading for event details
 Point andrew-padgett.com to andrewpadgett.com
-Fix favicon
-Media dropdown should close when user clicks outside of it
