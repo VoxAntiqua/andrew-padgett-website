@@ -25,7 +25,7 @@ const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
     >
       {/* Event Image with title and ensemble name overlay */}
       {event.image && (
-  <div className="relative w-full mb-4 shadow-lg">
+  <div className="relative w-full mb-4 lg:shadow-lg">
     <Image
       src={event.image.path}
       alt={event.image.alt}
@@ -35,11 +35,11 @@ const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
       objectFit="cover"  // Crop image to fill the area
     />
     {/* Title overlay */}
-    <div className="absolute top-0 left-0 bg-slate-900 bg-opacity-60 text-white p-2 m-2">
+    <div className="lg:absolute lg:top-0 lg:left-0 lg:bg-slate-900 lg:bg-opacity-60 lg:text-white py-2 my-2 lg:px-2 lg:mx-2">
       <h2 className={`${ibarra.className} text-3xl font-semibold hover:underline`}><a href={event.url} target="_blank">{event.title}</a></h2>
     </div>
     {/* Ensemble name overlay */}
-    <div className={`${ibarra.className} text-lg absolute bottom-0 right-0 bg-slate-900 bg-opacity-60 text-white p-2 m-2`}>
+    <div className={`${ibarra.className} lg:text-lg lg:absolute lg:bottom-0 lg:right-0 lg:bg-slate-900 lg:bg-opacity-60 lg:text-white py-2 my-2 lg:px-2 lg:mx-2`}>
     with <a href={event.ensemble.url} target="_blank" className="hover:underline">
         {event.ensemble.name}
       </a><br />directed by {event.director}

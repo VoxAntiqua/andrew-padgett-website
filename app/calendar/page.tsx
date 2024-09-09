@@ -5,6 +5,7 @@ import { events } from "../lib/calendarData";
 import { Event } from "../lib/definitions";
 import EventsList from "../ui/calendar/EventsList";
 import EventDetails from "../ui/calendar/EventDetails";
+import Modal from "../ui/Modal"; // Import the Modal component
 
 export default function Calendar() {
   const currentDate = new Date();
@@ -21,6 +22,17 @@ export default function Calendar() {
     upcomingEvents[0] || pastEvents[0] || null
   );
 
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const handleSelectEvent = (event: Event) => {
+    setSelectedEvent(event);
+    setModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
+
   return (
     <section className="p-8 lg:px-16">
       <div className="container">
@@ -30,7 +42,7 @@ export default function Calendar() {
             <EventsList
               events={upcomingEvents}
               pastEvents={pastEvents}
-              onSelectEvent={setSelectedEvent}
+              onSelectEvent={handleSelectEvent}
               selectedEvent={selectedEvent}
             />
           </div>
@@ -39,13 +51,18 @@ export default function Calendar() {
           <div className="border-t lg:border-l border-slate-400 mx-8 h-auto self-stretch hidden lg:block"></div>
 
           {/* Right Side: Container for Event Details */}
-          <div className="w-full lg:w-1/2">
+          <div className="hidden lg:block lg:w-1/2">
             {selectedEvent && (
               <EventDetails event={selectedEvent} key={selectedEvent.id} />
             )}
           </div>
         </div>
       </div>
+
+      {/* Modal for Event Details (visible on mobile) */}
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+        {selectedEvent && <EventDetails event={selectedEvent} key={selectedEvent.id} />}
+      </Modal>
     </section>
   );
 }

@@ -27,3 +27,14 @@ header {
     height: 100%;
     width: 100%;
   }
+
+/* Add your custom font classes */
+.font-ibarra {
+  font-family: 'Ibarra', serif; /* Use the Ibarra font family */
+}
+
+@media (max-width: 1024px) {
+  .font-ibarra {
+    font-family: initial; /* Fallback to default font on small screens */
+  }
+}
