@@ -330,4 +330,23 @@ export const events: Event[] = [
         location: ['Christ Church Greenwich', '254 East Putnam Avenue', 'Greenwich, CT']
     }]
   },
+  {
+    id: uuid(),
+    title: 'Residency: University of Oregon',
+    ensemble: {
+        name: 'Kaleidoscope Vocal Ensemble',
+        url: 'https://www.kaleidoscopevocalensemble.com'
+    },
+    director: 'Arianne Abela',
+    description: 'Comprised of artists with thriving solo careers who celebrate racial, ethnic, and gender diversity, Kaleidoscope Vocal Ensemble performs a program of works by Monteverdi and Purcell, as well as contemporary composers Caroline Shaw, Reena Esmail, and more.',
+    url: 'https://calendar.uoregon.edu/event/kaleidoscope-vocal-ensemble',
+    image: {
+        path: '/images/KaleidoscopeVocalEnsemble.jpg',
+        alt: 'Kaleidoscope Vocal Ensemble'
+    },
+    timesLocations: [{
+        time: '2025-01-12T15:00',
+        location: ['Beall Concert Hall', '961 East 18th Avenue', 'Eugene, OR']
+    }]
+  },
 ]
