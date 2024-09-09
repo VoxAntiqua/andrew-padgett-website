@@ -21,15 +21,17 @@ export default function Photos() {
       {/* Centered grid layout */}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 w-full max-w-screen-xl mx-auto">
         {/* Large photo on the left */}
-        <div className="relative w-full lg:col-span-2" style={{ paddingTop: '100%' }}>
-        <Link href={headshotImages[0]} target="_blank" rel="noopener noreferrer">
-          <Image
-            src={headshotImages[0]}
-            alt="Large Headshot"
-            fill
-            style={{ objectFit: 'cover', objectPosition: 'top' }}
-            className="absolute inset-0 shadow-lg"
-          />
+        <div className="relative w-full lg:col-span-2 aspect-w-1 aspect-h-1">
+          <Link href={headshotImages[0]} target="_blank" rel="noopener noreferrer">
+            <Image
+              src={headshotImages[0]}
+              alt="Large Headshot"
+              fill
+              style={{ objectFit: 'cover', objectPosition: 'top' }}
+              className="absolute inset-0 shadow-lg"
+              sizes="(max-width: 1024px) 100vw, 50vw"  // Sizes for large image
+              priority  // Add priority to improve LCP
+            />
           </Link>
         </div>
 
@@ -37,16 +39,14 @@ export default function Photos() {
         <div className="grid grid-cols-2 gap-4 lg:col-span-2">
           {headshotImages.slice(1, 5).map((image, index) => (
             <Link key={index} href={image} target="_blank" rel="noopener noreferrer">
-              <div
-                className="relative w-full"
-                style={{ paddingTop: '100%' }} // Ensures the images are square
-              >
+              <div className="relative w-full aspect-w-1 aspect-h-1">  {/* Maintain aspect ratio */}
                 <Image
                   src={image}
                   alt={`Headshot ${index + 2}`}
                   fill
                   style={{ objectFit: 'cover', objectPosition: 'top' }}
                   className="absolute inset-0 shadow-lg"
+                  sizes="(max-width: 1024px) 50vw, 25vw"  // Sizes for smaller images
                 />
               </div>
             </Link>
