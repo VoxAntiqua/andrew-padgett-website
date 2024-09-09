@@ -4,8 +4,8 @@ export default function About() {
   return (
     <section className="p-4 sm:p-6 lg:px-16">
       <div className="container flex flex-col lg:flex-row gap-4 lg:gap-6 h-auto lg:h-[calc(100vh-15rem)]">
-        {/* Image section */}
-        <div className="relative lg:flex-1 lg:w-[50%] lg:overflow-hidden">
+        {/* Image section (hidden on smaller screens) */}
+        <div className="relative hidden lg:flex lg:flex-1 lg:w-[50%] lg:overflow-hidden">
           <Image
             src="/images/HeadshotAbout.jpg"
             alt="Headshot of Andrew Padgett"

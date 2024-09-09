@@ -9,7 +9,7 @@ export default function Contact() {
 
   // Function to handle copying email to clipboard
   const copyEmailToClipboard = () => {
-    const email = "andrew.padgett.88" + "@" + "gmail.com"
+    const email = "andrew.padgett.88" + "@" + "gmail.com";
     navigator.clipboard.writeText(email).then(() => {
       setShowNotification(true); // Show the notification
       setTimeout(() => setShowNotification(false), 2500); // Hide after 2 seconds
@@ -26,19 +26,23 @@ export default function Contact() {
   return (
     <section className="p-8 lg:px-16">
       <div className="container flex flex-wrap gap-12 h-[calc(100vh-15rem)]">
-        {/* Image section */}
-        <div className="flex-1 relative h-full">
+        {/* Image section (hidden on small screens) */}
+        <div className="relative flex-1 h-full hidden lg:block">
           <Image
             src="/images/bcsdsinging.jpg"
             alt="Singing"
-            layout="fill"  // Fill the container
-            objectFit="contain"  // Contain the image while maintaining aspect ratio
-            objectPosition="center"  // Center the image
+            fill  // Use fill to make the image fill the container
+            sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw"  // Adjust sizes based on viewport width
+            priority
+            style={{
+              objectFit: 'contain',  // Contain the image while maintaining aspect ratio
+              objectPosition: 'center',  // Center the image
+            }}
           />
         </div>
 
         {/* Text section */}
-        <div className="flex-1 flex flex-col justify-center h-full gap-4 relative">
+        <div className="text-center lg:text-left flex-1 flex flex-col justify-center h-full gap-4 relative">
           <p>For bookings and inquiries, email me at:</p>
           <p>
             {/* Clickable email that triggers the copy function */}
