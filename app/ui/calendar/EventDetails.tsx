@@ -68,7 +68,7 @@ const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
       <p className="mt-4">{event.description}</p>
       <p className="mt-4">
         <a href={event.url} target="_blank" rel="noopener noreferrer" className="cursor-pointer text-blue-700 hover:underline">
-          Learn more
+          Click here for more information and tickets
         </a>
       </p>
       <ul className="mt-6 space-y-4">
