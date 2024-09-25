@@ -339,7 +339,7 @@ export const events: Event[] = [
     },
     director: 'Arianne Abela',
     description: 'Comprised of artists with thriving solo careers who celebrate racial, ethnic, and gender diversity, Kaleidoscope Vocal Ensemble performs a program of works by Monteverdi and Purcell, as well as contemporary composers Caroline Shaw, Reena Esmail, and more.',
-    url: 'https://calendar.uoregon.edu/event/kaleidoscope-vocal-ensemble',
+    url: 'https://www.kaleidoscopevocalensemble.com/kve-events/kaleidoscope-in-concert-university-of-oregon',
     image: {
         path: '/images/KaleidoscopeVocalEnsemble.jpg',
         alt: 'Kaleidoscope Vocal Ensemble'
