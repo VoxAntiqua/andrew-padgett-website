@@ -35,6 +35,12 @@ const Press: React.FC = () => {
             <br />
             <div className='text-right py-3'>Malcolm Riley, Gramophone</div>
           </p>
+
+          <p>
+            &quot;The fifth section, Triumph of Time, featured baritone Andrew Padgett in Il Tempo fugge (&quot;Time, time flies&quot;). Accompanied by a lute and a soulful theorbo, Padgett elegantly shaped this song (part dirge, part sarabande) about time&apos;s relentless nature: &quot;Today it comes, tomorrow it passes.&quot;&quot;
+            <br />
+            <div className='text-right py-3'>Gail Obenreder, Broad Street Review</div>
+          </p>
         </div>
 
         <div className="flex-1 space-y-8">
