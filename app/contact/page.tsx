@@ -29,7 +29,7 @@ export default function Contact() {
         {/* Image section (hidden on small screens) */}
         <div className="relative flex-1 h-full hidden lg:block">
           <Image
-            src="/images/bcsdsinging.jpg"
+            src="/images/TriomphiPhiladelphia.jpg"
             alt="Singing"
             fill  // Use fill to make the image fill the container
             sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw"  // Adjust sizes based on viewport width
