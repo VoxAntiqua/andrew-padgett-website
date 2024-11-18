@@ -24,6 +24,26 @@ export const events: Event[] = [
   },
   {
     id: uuid(),
+    title: 'Bach: Sei Lob und Ehr dem höchsten Gut, BWV 117',
+    ensemble: {
+      name: 'Emmanuel Music', 
+      url: 'https://www.emmanuelmusic.org'
+    }, 
+    role: 'Bass soloist',
+    director: 'Ryan Turner',
+    description: 'Bach’s magnificent cantatas have been presented as part of the Sunday morning worship service at Emmanuel Church since 1970. Founding Artistic Director Craig Smith initiated the series which has continued to the present day. In addition to Bach, this season features premieres by Elena Ruehr and Kati Agócs, and commissioned motets by Nell Shaw Cohen, Trevor Weston, Peter Child, Philip Lasser and Evan Williams. All are welcome to attend the service, which begins at 10:00 AM.',
+    url: 'https://www.emmanuelmusic.org/performance-info/2024-2025-cantata-schedule',
+    image:{
+        path: '/images/EmmanuelEnsemblePhoto.webp',
+        alt: 'Emmanuel Music'
+    },
+    timesLocations: [{
+      time: '2024-11-24T10:00',
+      location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
+    }]
+  },
+  {
+    id: uuid(),
     title: 'Mozart Requiem',
     ensemble: {
         name: 'Handel and Haydn Society',
