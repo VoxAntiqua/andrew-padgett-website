@@ -389,4 +389,44 @@ export const events: Event[] = [
         location: ['Beall Concert Hall', '961 East 18th Avenue', 'Eugene, OR']
     }]
   },
+  {
+    id: uuid(),
+    title: 'Bach: Ich lasse dich nicht, du segnest mich denn, BWV 157',
+    ensemble: {
+      name: 'Emmanuel Music', 
+      url: 'https://www.emmanuelmusic.org'
+    }, 
+    role: 'Bass soloist',
+    director: 'Ryan Turner',
+    description: 'Bach’s magnificent cantatas have been presented as part of the Sunday morning worship service at Emmanuel Church since 1970. Founding Artistic Director Craig Smith initiated the series which has continued to the present day. In addition to Bach, this season features premieres by Elena Ruehr and Kati Agócs, and commissioned motets by Nell Shaw Cohen, Trevor Weston, Peter Child, Philip Lasser and Evan Williams. All are welcome to attend the service, which begins at 10:00 AM.',
+    url: 'https://www.emmanuelmusic.org/performance-info/2024-2025-cantata-schedule',
+    image:{
+        path: '/images/EmmanuelEnsemblePhoto.webp',
+        alt: 'Emmanuel Music'
+    },
+    timesLocations: [{
+      time: '2025-02-02T10:00',
+      location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
+    }]
+  },
+  {
+    id: uuid(),
+    title: 'Bach: Der Herr ist mein getreuer Hirt, BWV 112',
+    ensemble: {
+      name: 'Emmanuel Music', 
+      url: 'https://www.emmanuelmusic.org'
+    }, 
+    role: 'Bass soloist',
+    director: 'Ryan Turner',
+    description: 'Bach’s magnificent cantatas have been presented as part of the Sunday morning worship service at Emmanuel Church since 1970. Founding Artistic Director Craig Smith initiated the series which has continued to the present day. In addition to Bach, this season features premieres by Elena Ruehr and Kati Agócs, and commissioned motets by Nell Shaw Cohen, Trevor Weston, Peter Child, Philip Lasser and Evan Williams. All are welcome to attend the service, which begins at 10:00 AM.',
+    url: 'https://www.emmanuelmusic.org/performance-info/2024-2025-cantata-schedule',
+    image:{
+        path: '/images/EmmanuelEnsemblePhoto.webp',
+        alt: 'Emmanuel Music'
+    },
+    timesLocations: [{
+      time: '2025-05-11T10:00',
+      location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
+    }]
+  }
 ]
