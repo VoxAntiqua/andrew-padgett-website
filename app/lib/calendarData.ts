@@ -428,5 +428,25 @@ export const events: Event[] = [
       time: '2025-05-11T10:00',
       location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
     }]
+  },
+  {
+    id: uuid(),
+    title: 'Bach: St. John Passion',
+    ensemble: {
+      name: 'American Classical Orchestra',
+      url: 'https://aconyc.org/'
+    },
+    role: 'Bass soloist',
+    director: 'Thomas Crawford',
+    description: 'Bach’s St. John Passion is not the first oratorio he wrote but it is his earliest such work to survive.  He composed it just after his 39th birthday, for a vesper service on Good Friday, while he was director of church music in Leipzig.  It premiered on April 7, 1724, three years before St. Matthew, his only other surviving Passion (of the five he wrote) was performed, also on a Good Friday in Leipzig.\nWhile oratorios were originally developed as large-scale musical compositions for solo voices, chorus, and orchestra, celebrating a religious subject, because of their length (often four hours or more), they were not intended for liturgical use.  They were generally performed in churches or concert halls, with the music divided in two parts, separated by a sermon.\nThe earliest known oratorio dates from 1600 and involves dramatic action, including a ballet.  By Bach’s time, the form had undergone significant changes, action had been abandoned, and the use of predominantly Latin or Italian texts had been modified by German composers, beginning with Heinrich Schütz, who blended German and Italian elements.  What Bach contributed to the genre was a vigorous treatment of the choruses and the use of narrative as a binding element, dramatically linking the arias to the chorales and choruses, holding the entire structure together in a way that is richly expressive, powerful, and affecting.',
+    url: 'https://aconyc.org/season-40/st-john-passion/',
+    image:{
+      path: '/images/ACO-Full-w-Chorus.webp',
+      alt: 'American Classical Orchestra'
+    },
+    timesLocations: [{
+      time: '2025-01-30T19:30',
+      location: ['Alice Tully Hall, Lincoln Center', '1941 Broadway at West 65th Street', 'New York, NY']
+    }]
   }
 ]
