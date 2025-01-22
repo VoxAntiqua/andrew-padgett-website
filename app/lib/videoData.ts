@@ -4,6 +4,17 @@ import { Video } from './definitions';
 export const videos:Video[] = [
     {
         id: uuid(),
+        title: "Voi ch\'ascoltate in rime sparse il suono",
+        composerOrSubtitle: "Sigismondo d\'India",
+        ensemble: {
+            name: 'TENET Vocal Artists',
+            url: "https://tenet.nyc"
+        },
+        monthYear: 'November 2024',
+        youtubeEmbedCode: 'https://www.youtube.com/embed/miRq5VqRT24?si=YDUIggxVqjC_x58a'
+    },
+    {
+        id: uuid(),
         title: "Rezitativ: O Christenheit! Wohlan, so mache dich bereit",
         composerOrSubtitle: "Johann Sebastian Bach, from BWV 91",
         ensemble: {
