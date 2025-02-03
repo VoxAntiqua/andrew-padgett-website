@@ -13,6 +13,12 @@ const Press: React.FC = () => {
           </p>
 
           <p>
+            &quot;The Aria for Bass and Choir, #24: Eilt ihr angefochtnen Seelen (hurry you tempted souls) was spine-tingling as it raced along, featuring the full virtuosic power of Bass Baritone Andrew Padgett as Pilate, the chorus and orchestra, and their illumination of the blinding radiance of Bach&apos;s genius.&quot;
+            <br />
+            <div className='text-right py-3'>Edward A Kliszus, <a href="https://openingnight.online/american-classical-orchestra-j-s-bachs-st-john-passion/" target="_blank" rel="noopener noreferrer">Opening Night Reviews</a></div>
+          </p>
+
+          <p>
             &quot;Players and soloists delivered their usual fine musicianship throughout: Sopranos Corinne Byrne and Sonja Tengblad, alto Carrie Cheron, tenors Matthew Anderson and Charles Blandy, and bass Andrew Padgett all brought their excellent diction and heart to the work. Standing out was Heidi Braun-Hill, concert mistress, who brought out the plain tune within Bach&apos;s ornamental string writing in her duet with tenor Blandy. Here, Rafael Popper-Keiser and Michael Beattie deserve recognition for their always expert and compassionate basso continuo. The double reed quartet of Peggy Pearson, Catherine Weinfeld-Zell, and Jennifer Slowik (on English horn) and bassoonist Adrian Morejon, with bass Andrew Padgett in the instrumental chorale &quot;Why are you so angry?&quot; was a brilliant contrast between slogging through &quot;earth and dung&quot; and harried confusion. Following this was a heartbreaking double duet with Sonja Tengblad&apos;s rich soprano and Carrie Cheron&apos;s warm alto, while Jennifer Slowik on English horn duetted with flautist Vanessa Holroyd. The final chorale for this gigantic work was bare bones, making an incredibly surprising and perfect contrast.&quot;
             <br />
             <div className='text-right py-3'>Amelia LeClair, <a href="https://www.classical-scene.com/2024/06/07/carrying-bach/" target="_blank" rel="noopener noreferrer">Boston Music Intelligencer</a></div>
@@ -49,6 +55,11 @@ const Press: React.FC = () => {
             &quot;...Equally effective is the accumulating interest of &apos;The Lord Will Surely Come&apos;, an anthem that has deservedly earned its place within the American church. Baritone Andrew Padgett is splendidly declamatory in his brief solo, but it is the work&apos;s exotic harmonic language (now prominently Gallic) and its melodic &apos;rolling breakers&apos; that leave no doubt of a second coming implied by the work&apos;s title.&quot;
             <br />
             <div className='text-right py-3'>David Truslove, <a href="https://operatoday.com/2021/06/the-music-of-celebrated-american-organist-choirmaster-gerre-hancock/" target="_blank" rel="noopener noreferrer">Opera Today</a></div>
+          </p>
+
+          <p>&quot;Pilate, in Andrew Padgett&apos;s chilling, sinuous interpretation built up a kind of electrifying, edge-of-seat suspense, as though, despite knowing the story, one might still hope and wait with bated breath for a different outcome.&quot;
+            <br/>
+            <div className='text-right py-3'>Maria-Cristina Necula, <a href="https://www.womanaroundtown.com/sections/playing-around/american-classical-orchestras-riveting-performance-of-bachs-st-john-passion/" target="_blank" rel="noopener noreferrer">Woman Around Town</a></div>
           </p>
 
           <p>
