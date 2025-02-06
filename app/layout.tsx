@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import {Analytics} from "@vercel/analytics/react"
 
 import Header from "./header";
 import Footer from "./footer";
@@ -26,6 +27,7 @@ export default function RootLayout({
         {/* Scrollable main content */}
         <main className="flex-1 overflow-y-auto">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
