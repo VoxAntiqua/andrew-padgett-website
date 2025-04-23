@@ -4,6 +4,18 @@ import { Video } from './definitions';
 export const videos:Video[] = [
     {
         id: uuid(),
+        title: "Aria: Eilt, ihr angefochtnen Seelen",
+        composerOrSubtitle: "Johann Sebastian Bach, from Johannespassion",
+        ensemble: {
+            name: 'American Classical Orchestra',
+            url: "https://aconyc.org"
+        },
+        monthYear: 'January 2025',
+        director: 'Thomas Crawford',
+        youtubeEmbedCode: 'https://www.youtube.com/embed/cEoB2Hr36sk?si=DMhGSi6aQCZiAuEo&amp;start=4288'
+    },
+    {
+        id: uuid(),
         title: "Voi ch\'ascoltate in rime sparse il suono",
         composerOrSubtitle: "Sigismondo d\'India",
         ensemble: {
