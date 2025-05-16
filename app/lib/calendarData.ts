@@ -256,6 +256,34 @@ export const events: Event[] = [
   },
   {
     id: uuid(),
+    title: 'Equal the Stars in Number: On the Cusp of the 16th Century',
+    ensemble: {
+      name:'Ampersand',
+      url:'https://www.weareampersand.net'
+    },
+    director: 'Madeline Healey and Tim Parsons',
+    description: 'Exploring the astonishing creativity on display in the Chigi Codex and the Eton Choirbook, both compiled in the waning years of the 15th century. This program highlights the floridity and inventiveness of the counterpoint found in these works as well as the curious style of combinative myth-making on display–many of the texts mix imagery from ancient Greek and Roman mythology with flowery exhortations to Mary, the mother of Jesus. The Eton Choirbook is represented by English composers William Horewud, Walter Lambe and William Cornysh; and the Chigi Codex by Franco-Flemish masters Johannes Regis, Gaspar van Weerbeke, and Loyset Compere. ',
+    url: 'https://www.weareampersand.net/events',
+    image:{
+        path: '/images/ampersandEnsemblePhoto.jpg',
+        alt: 'Ampersand vocal chamber ensemble'
+    },
+    timesLocations: [{
+      time: '2025-06-17T19:30',
+      location: ['St. Anne\'s in the Fields', '147 Concord Road', 'Lincoln, MA']
+    },{
+      time: '2025-06-18T19:30',
+      location: ['The Chapel at West Parish', '210 Lowell Street', 'Andover, MA']
+    },{
+      time: '2025-06-19T19:30',
+      location: ['Lindsey Chapel at Emmanuel Church', '15 Newbury Street', 'Boston, MA']
+    },{
+      time: '2025-06-21T16:00',
+      location: ['Keene Arts', '10881 Route 73', 'Keene, NY']
+    }]
+  },
+  {
+    id: uuid(),
     title: 'Take Flight',
     ensemble: {
         name: 'Skylark Vocal Ensemble',
@@ -447,6 +475,84 @@ export const events: Event[] = [
     timesLocations: [{
       time: '2025-01-30T19:30',
       location: ['Alice Tully Hall, Lincoln Center', '1941 Broadway at West 65th Street', 'New York, NY']
+    }]
+  },
+  {
+    id: uuid(),
+    title: 'Handel\'s Messiah: As Heard in His Time',
+    ensemble: {
+      name: 'Cantata Singers with Finger Lakes Early Music',
+      url: 'https://www.cantatasingers.com/'
+    },
+    role: 'Bass soloist',
+    director: 'Will Wickham and Caroline Giassi',
+    description: 'Experience the power and beauty of Handel\'s MESSIAH with the Cantata Singers on Saturday, May 17th at 7:30 PM at Grace Episcopal Church in Elmira. Prepare to be transported to 18th-century London as our dedicated local singers, together with renowned Baroque specialists Elijah McCormack, Virginia Kelsey, Dann Coakwell, and Andrew Padgett bring portions of this great work to life. Their voices will soar above the rich textures of an orchestra of Baroque musicians playing authentic period instruments, bringing Handel\'s masterpiece to life with unparalleled grandeur. Don\'t miss this extraordinary opportunity to witness Messiah performed in its most authentic form by passionate local talent and world-class artists.',
+    url: 'https://www.cantatasingers.com/may-25-messiah-program',
+    image: {
+      path: '/images/ElmiraGraceWindow.jpg',
+      alt: 'Window in Grace Church, Elmira NY'
+    },
+    timesLocations: [{
+      time: '2025-05-17T19:30',
+      location: ['Grace Episcopal Church', '375 West Church Street', 'Elmira, NY']
+    }]
+  },
+  {
+    id: uuid(),
+    title: 'JS Bach: Nun komm, der Heiden Heiland, BWV 61',
+    ensemble: {
+      name: 'Bach Akademie Charlotte',
+      url: 'https://bacharlotte.com/'
+    },
+    url: 'https://bacharlotte.com/2024-25/2025-festival/tuning-in-bach-bwv-61',
+    image: {
+      path: '/images/BachAkademieCharlotte.jpg',
+      alt: 'Bach Akademie Charlotte Background'
+    },
+    description: 'Johann Sebastian Bach composed the church cantata Nun komm, der Heiden Heiland (Now come, Savior of the heathens), BWV 61, in Weimar for the first Sunday in Advent, the Sunday which begins the liturgical year, and first performed it on December 2, 1714. For Lutherans, the festive start to the liturgical year had a hopeful character. After all, it was almost Christmas time.\n\nOn March 2, 1714 Bach was appointed concertmaster of the Weimar court capelle of the co-reigning dukes Wilhelm Ernst and Ernst August of Saxe-Weimar. As concertmaster, he assumed the principal responsibility for composing new works, specifically cantatas for the Schlosskirche (palace church), on a monthly schedule.\n\nBach structured this cantata in six movements, beginning with chorale fantasia, followed by a series of alternating recitatives and arias and concluded by a chorale. The words of the cantata are derived from Luther\'s Advent chorale Nun komm, der Heiden Heiland, which was well-known at the time. The first and the last movement follow Luther\'s text literally, and the middle movements are based on it.\n\nThis melody is first documented as a Roman Catholic Latin hymn based upon Gregorian chant in manuscript form in Einsiedeln (Switzerland) around 1120. ',
+    director: 'Guy Fishman and Aisslinn Nosky',
+    timesLocations: [{
+      time: '2025-06-05T12:00',
+      location: ['Myers Park Presbyterian Church', '2501 Oxford Place', 'Charlotte, NC']
+    }]
+  },
+  {
+    id: uuid(),
+    title: 'JS Bach: Meine Seel erhebt den Herren, BWV 10',
+    ensemble: {
+      name: 'Bach Akademie Charlotte',
+      url: 'https://bacharlotte.com/'
+    },
+    url: 'https://bacharlotte.com/2024-25/2025-festival/tuning-in-bach-bwv-10',
+    image: {
+      path: '/images/BachAkademieCharlotte.jpg',
+      alt: 'Bach Akademie Charlotte Background'
+    },
+    description: 'Johann Sebastian Bach composed the church cantata Meine Seel erhebt den Herren (My soul magnifies the Lord), in 1724 as part of his second cantata cycle. By early July, Bach was more than a month into his second year as Thomaskantor in Leipzig. Meine Seel erhebt den Herren is the fifth of 40 chorale cantatas he started that year. \n\nBach adopted the text and the melody of Martin Luther\'s German Magnificat in various compositions, including this one. (Meine Seel erhebt den Herren, BWV 10 is also known as Bach\'s German Magnificat.)\n\nThe work follows Bach\'s chorale cantata format. The outer movements of the cantata are set for mixed choir and an orchestra consisting of trumpet, two oboes, strings and continuo. Luther\'s translation of Luke 1:46-48 provides the text for the first movement. The canticle\'s doxology is the text of the last movement, and the five middle movements are a succession of arias and recitatives.',
+    director: 'Guy Fishman and Aisslinn Nosky',
+    timesLocations: [{
+      time: '2025-06-06T12:00',
+      location: ['Myers Park Presbyterian Church', '2501 Oxford Place', 'Charlotte, NC']
+    }]
+  },
+  {
+    id: uuid(),
+    title: 'Mozart Requiem',
+    ensemble: {
+      name: 'Bach Akademie Charlotte',
+      url: 'https://bacharlotte.com/'
+    },
+    url: 'https://bacharlotte.com/2024-25/2025-festival/mozart-requiem',
+    image: {
+      path: '/images/BachAkademieCharlotte.jpg',
+      alt: 'Bach Akademie Charlotte Background'
+    },
+    role: 'Bass soloist',
+    description: 'A requiem, of course, is music for a religious ceremony intended to honor the memory of, and make a plea for, those who have passed away. In early July of 1791, an \'unknown, gray stranger\' showed up at Mozart\'s door, requesting an anonymous commission to compose a Requiem Mass—on the understanding that Mozart not seek to learn the identity of his patron. Mozart accepted, and the stranger paid for the Requiem in full.\n\nMozart\'s study of traditions of funeral music likely played a role in the Requiem\'s composition, as well as his recent affinity for Baroque counterpoint. Mozart begins in the key of D minor, the same key used to conjure the terrifying sounds in his opera Don Giovanni, as the titular character is carried by demons down into Hell.\n\nIn ill health and near death, Mozart completed the Requiem and Kyrie movements, and managed to sketch the voice parts and bass lines for the Dies irae through to the Hostias. But before he could complete the work, Mozart died on December 5, 1791, at the age of 35. His widow Constanze feared that if she handed over an incomplete work, the mystery patron would demand his money back. She asked Joseph Eybler to finish the score, but after orchestrating the music following the Kyrie, Eybler handed it over to Mozart\'s pupil Franz Xaver Süssmayer.\n\nSüssmayer completed the work, copying the entire completed score in his own hand. There is to this day controversy over who actually composed what in the remaining sections of the Requiem, and how much—or how little—Mozart dictated the notes or outlines of those movements.\n\nThe unknown patron was Anton Leitgeb, son of the mayor of Vienna and the valet of Count Franz von Walsegg-Stuppach. Leitgeb had a well-earned reputation for promoting other people\'s music as his own. The Count was hoping to use Mozart\'s Requiem to commemorate his late wife, Anna. It took a decade before Constanze was able to persuade Walsegg to acknowledge Mozart as the Requiem\'s true composer. Well, at least part of it, anyway.\n\nThe end result is a powerful exploration of grief and mortality that contains some of Mozart\'s darkest music. It is one of the most famous choral works in the classical repertoire—a masterpiece that will stir your emotions.',
+    director: 'Guy Fishman and Aisslinn Nosky',
+    timesLocations: [{
+      time: '2025-06-07T19:30',
+      location: ['Sandra Levine Theatre - Sarah Belk Gambrell Center, Queens University of Charlotte', '2319 Wellesley Avenue', 'Charlotte, NC']
     }]
   }
 ]
