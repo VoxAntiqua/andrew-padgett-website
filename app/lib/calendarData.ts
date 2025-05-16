@@ -265,7 +265,7 @@ export const events: Event[] = [
     description: 'Exploring the astonishing creativity on display in the Chigi Codex and the Eton Choirbook, both compiled in the waning years of the 15th century. This program highlights the floridity and inventiveness of the counterpoint found in these works as well as the curious style of combinative myth-making on display–many of the texts mix imagery from ancient Greek and Roman mythology with flowery exhortations to Mary, the mother of Jesus. The Eton Choirbook is represented by English composers William Horewud, Walter Lambe and William Cornysh; and the Chigi Codex by Franco-Flemish masters Johannes Regis, Gaspar van Weerbeke, and Loyset Compere. ',
     url: 'https://www.weareampersand.net/events',
     image:{
-        path: '/images/ampersandEnsemblePhoto.jpg',
+        path: '/images/AmpersandGorpCore.jpg',
         alt: 'Ampersand vocal chamber ensemble'
     },
     timesLocations: [{
