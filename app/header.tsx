@@ -162,7 +162,7 @@ export default function Header() {
       </nav>
 
       {/* Separate dividing line spanning about 80% of the viewport width */}
-      <div className={`border-b ${isHomePage ? "border-white" : "border-slate-400"} mx-auto w-4/5`}></div>
+      <div className={`border-b ${isHomePage ? "hidden" : "border-slate-400"} mx-auto w-4/5`}></div>
     </header>
   );
 }

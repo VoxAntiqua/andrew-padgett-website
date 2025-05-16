@@ -5,11 +5,13 @@ export default function Home() {
     <section className="relative w-full h-screen">
       {/* Splash Image */}
       <Image
-        src="/images/HomeSplash.jpg"
+        src="/images/SplashHeadshot.jpg"
         alt="Home Splash"
         fill  // Fill the entire viewport
-        style={{ objectFit: 'cover' }}  // Cover the entire viewport
-        priority  // Prioritize loading this image
+        style={{ 
+          objectFit: 'cover',
+          objectPosition: 'top'  // <- This ensures the image crops only at the bottom
+        }}        priority  // Prioritize loading this image
       />
     </section>
   );
