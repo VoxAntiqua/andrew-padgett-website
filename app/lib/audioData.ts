@@ -4,6 +4,25 @@ import { AudioClip } from './definitions';
 export const audioClips: AudioClip[] = [
     {
         id: uuid(),
+        path: '/audio/TheTrumpetShallSound.mp3',
+        title: 'The Trumpet Shall Sound',
+        collection: 'Messiah, HWV 56',
+        composer: 'George Frideric Handel',
+        monthYear: 'May 2025',
+        live: true,
+        featuring: 'Chris Colletti, trumpet'
+    },
+    {
+        id: uuid(),
+        path: '/audio/ThusSaithTheLord.mp3',
+        title: 'Thus Saith The Lord',
+        collection: 'Messiah, HWV 56',
+        composer: 'George Frideric Handel',
+        monthYear: 'May 2025',
+        live: true,
+    },
+    {
+        id: uuid(),
         path: '/audio/AmarDei.mp3',
         title: 'Amar Dei',
         composer: 'Bernart Marti',
