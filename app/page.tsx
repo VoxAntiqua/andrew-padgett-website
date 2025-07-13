@@ -5,7 +5,7 @@ export default function Home() {
     <section className="relative w-full h-screen">
       {/* Splash Image */}
       <Image
-        src="/images/SplashHeadshot.jpg"
+        src="/images/SplashSeated.jpg"
         alt="Home Splash"
         fill  // Fill the entire viewport
         style={{ 
