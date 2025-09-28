@@ -4,6 +4,70 @@ import { Event } from './definitions';
 export const events: Event[] = [
   {
     id: uuid(),
+    title: 'Bach: Wer Dank opfert, der preiset mich, BWV 17',
+    ensemble: {
+      name: 'Emmanuel Music',
+      url: 'https://www.emmanuelmusic.org'
+    },
+    role: 'Bass soloist',
+    director: 'Ryan Turner and guest conductor Andrew Clark',
+    description: 'Emmanuel Music is one of the only organizations in the world that regularly performs Bach\'s cantatas within the liturgical context for which they were intended. The Sunday Eucharist at Emmanuel Church begins at 10:00 AM with the cantata performance beginning just before the closing hymn.',
+    url: 'https://www.emmanuelmusic.org/performance-info/2025-2026-cantata-schedule',
+    image:{
+        path: '/images/EmmanuelEnsemblePhoto.webp',
+        alt: 'Emmanuel Music'
+    },
+    timesLocations: [{
+      time: '2025-10-12T10:00',
+      location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
+    }]
+  },
+  {
+    id: uuid(),
+    title: 'Bach: Ich freue mich in dir, BWV 133',
+    ensemble: {
+      name: 'Emmanuel Music',
+      url: 'https://www.emmanuelmusic.org'
+    },
+    role: 'Bass soloist',
+    director: 'Ryan Turner',
+    description: 'Emmanuel Music is one of the only organizations in the world that regularly performs Bach\'s cantatas within the liturgical context for which they were intended. The Sunday Eucharist at Emmanuel Church begins at 10:00 AM with the cantata performance beginning just before the closing hymn.',
+    url: 'https://www.emmanuelmusic.org/performance-info/2025-2026-cantata-schedule',
+    image:{
+        path: '/images/EmmanuelEnsemblePhoto.webp',
+        alt: 'Emmanuel Music'
+    },
+    timesLocations: [{
+      time: '2025-12-24T10:00',
+      location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
+    }]
+  },
+  {
+    id: uuid(),
+    title: 'Bach: Christmas Oratorio',
+    ensemble: {
+      name: 'Emmanuel Music',
+      url: 'https://www.emmanuelmusic.org'
+    },
+    role: 'Bass soloist',
+    director: 'Ryan Turner',
+    description: 'The six cantatas of the radiant Christmas Oratorio ignite the holiday spirit with Bach\'s unparalleled brilliance played out in exquisite pastoral scenes, profound vocal solos, and dazzling choruses. Join us as we continue our cherished tradition, crafting a holiday experience that resonates with timeless joy.',
+    url: 'https://www.emmanuelmusic.org/performance-info/christmas-oratorio',
+    image:{
+        path: '/images/EmmanuelEnsemblePhoto.webp',
+        alt: 'Emmanuel Music'
+    },
+    timesLocations: [{
+      time: '2025-12-13T19:00',
+      location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
+    },
+  {
+      time: '2025-12-14T14:00',
+      location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
+    }]
+  },
+  {
+    id: uuid(),
     title: 'Graupner: Wie lieblich sind deine Wohnungen, GWV 1108/42',
     ensemble: {
       name: 'Emmanuel Music and the Emmanuel Chapel Choir', 
