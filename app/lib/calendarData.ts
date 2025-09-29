@@ -68,555 +68,336 @@ export const events: Event[] = [
   },
   {
     id: uuid(),
-    title: 'Graupner: Wie lieblich sind deine Wohnungen, GWV 1108/42',
+    title: 'Nuestra Señora',
     ensemble: {
-      name: 'Emmanuel Music and the Emmanuel Chapel Choir', 
-      url: 'https://www.emmanuelmusic.org'
-    }, 
-    role: 'Bass soloist',
-    director: 'Ryan Turner',
-    description: 'Bach’s magnificent cantatas have been presented as part of the Sunday morning worship service at Emmanuel Church since 1970. Founding Artistic Director Craig Smith initiated the series which has continued to the present day. In addition to Bach, this season features premieres by Elena Ruehr and Kati Agócs, and commissioned motets by Nell Shaw Cohen, Trevor Weston, Peter Child, Philip Lasser and Evan Williams. All are welcome to attend the service, which begins at 10:00 AM.',
-    url: 'https://www.emmanuelmusic.org/performance-info/2024-2025-cantata-schedule',
-    image:{
-        path: '/images/EmmanuelEnsemblePhoto.webp',
-        alt: 'Emmanuel Music'
-    },
-    timesLocations: [{
-      time: '2024-09-08T10:00',
-      location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
-    }]
-  },
-  {
-    id: uuid(),
-    title: 'Bach: Sei Lob und Ehr dem höchsten Gut, BWV 117',
-    ensemble: {
-      name: 'Emmanuel Music', 
-      url: 'https://www.emmanuelmusic.org'
-    }, 
-    role: 'Bass soloist',
-    director: 'Ryan Turner',
-    description: 'Bach’s magnificent cantatas have been presented as part of the Sunday morning worship service at Emmanuel Church since 1970. Founding Artistic Director Craig Smith initiated the series which has continued to the present day. In addition to Bach, this season features premieres by Elena Ruehr and Kati Agócs, and commissioned motets by Nell Shaw Cohen, Trevor Weston, Peter Child, Philip Lasser and Evan Williams. All are welcome to attend the service, which begins at 10:00 AM.',
-    url: 'https://www.emmanuelmusic.org/performance-info/2024-2025-cantata-schedule',
-    image:{
-        path: '/images/EmmanuelEnsemblePhoto.webp',
-        alt: 'Emmanuel Music'
-    },
-    timesLocations: [{
-      time: '2024-11-24T10:00',
-      location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
-    }]
-  },
-  {
-    id: uuid(),
-    title: 'Bach: Das neugeborne Kindelein, BWV 122',
-    ensemble: {
-      name: 'Emmanuel Music', 
-      url: 'https://www.emmanuelmusic.org'
-    }, 
-    role: 'Bass soloist',
-    director: 'Ryan Turner',
-    description: 'Bach’s magnificent cantatas have been presented as part of the Sunday morning worship service at Emmanuel Church since 1970. Founding Artistic Director Craig Smith initiated the series which has continued to the present day. In addition to Bach, this season features premieres by Elena Ruehr and Kati Agócs, and commissioned motets by Nell Shaw Cohen, Trevor Weston, Peter Child, Philip Lasser and Evan Williams. All are welcome to attend the service, which begins at 7:30 PM.',
-    url: 'https://www.emmanuelmusic.org/performance-info/2024-2025-cantata-schedule',
-    image:{
-        path: '/images/EmmanuelEnsemblePhoto.webp',
-        alt: 'Emmanuel Music'
-    },
-    timesLocations: [{
-      time: '2024-12-24T19:30',
-      location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
-    }]
-  },
-  {
-    id: uuid(),
-    title: 'Mozart Requiem',
-    ensemble: {
-        name: 'Handel and Haydn Society',
-        url: 'https://handelandhaydn.org'
-    },
-    director: 'Jonathan Cohen',
-    description: 'Artistic Director Jonathan Cohen and the superb H+H Chorus “let perpetual light shine” in this stunning season opener, a double feature of moving masterpieces. Performing this heartfelt music with the instruments for which it was composed, the H+H Orchestra and Chorus trace the influence of the opening requiem by Michael Haydn (our namesake’s brother) on Mozart’s main event. Your spirit will be uplifted by sublime soloists, including soprano Lucy Crowe, who “takes us heavenwards with dazzling high notes until we arrive at paradise itself” (The Times).',
-    url: 'https://handelandhaydn.org/concerts/2024-25/mozart-requiem/',
-    image:{
-        path: '/images/HandHRequiem.png',
-        alt: 'Handel and Haydn Society'
-    },
-    timesLocations: [{
-        time: '2024-09-27T19:30',
-        location: ['Symphony Hall', '301 Massachusetts Avenue', 'Boston, MA']
-    },{
-        time: '2024-09-29T15:00',
-        location: ['Symphony Hall', '301 Massachusetts Avenue', 'Boston, MA']
-    }]
-  },
-  {
-    id: uuid(),
-    title: 'Return to Earth',
-    ensemble: {
-      name:'Ampersand',
-      url:'https://www.weareampersand.net'
+      name: 'Ampersand',
+      url: 'https://www.weareampersand.net',
     },
     director: 'Madeline Healey and Tim Parsons',
-    description: 'a spooky program of (mostly) Franco-flemish pieces composers wrote to honor their dead friends',
+    description: 'works by Hellinck, Gombert, Andreas de Silva, and Victoria — drawing inspiration from a 1589 document detailing the contents of the musical collection in the Mexico City Cathedral',
     url: 'https://www.weareampersand.net/events',
     image:{
-        path: '/images/ampersandEnsemblePhoto.jpg',
+        path: '/images/ampersandGorpCore.jpg',
         alt: 'Ampersand vocal chamber ensemble'
     },
     timesLocations: [{
-      time: '2024-10-05T16:00',
+      time: '2025-10-04T16:00',
       location: ['The Old Round Church', '29 Round Church Road', 'Richmond, VT']
     }]
   },
   {
     id: uuid(),
-    title: 'Triomphi',
+    title: 'Nuestra Señora',
     ensemble: {
-      name: 'TENET Vocal Artists and Piffaro, the Renaissance Band',
-      url: 'https://www.piffaro.org'
+      name: 'Ampersand',
+      url: 'https://www.weareampersand.net',
     },
-    director: 'Jolle Greenleaf and Priscilla Herreid',
-    description: 'Francesco Petrarch, considered the founder of humanism, was the most influential poet of the Italian Renaissance. He wrote of timeless themes in his Triumphs - Love, Chastity, Death, Fame, Time, Eternity - each more powerful than the last. Our musical interpretation, created by Grant Herreid, will run the gamut of 16th century styles: from light-hearted carnival songs of the early Renaissance, through polyphonic madrigals of Cipriano de Rore and Orlando de Lassus, to the beginnings of 17th century monody. For this, our biggest program of the season, Piffaro joins forces with TENET Vocal Artists and groundbreaking visual designer Camilla Tassi in a musical, artistic, and literary exploration of human experience.',
-    url: 'https://piffaro.my.salesforce-sites.com/ticket/#/events/a0SUs000000HDYjMAO',
+    director: 'Madeline Healey and Tim Parsons',
+    description: 'Works by Hellinck, Gombert, Andreas de Silva, and Victoria — drawing inspiration from a 1589 document detailing the contents of the musical collection in the Mexico City Cathedral. Presented by Gotham Early Music Scene.',
+    url: 'https://gemsny.org/event/midtown-concerts-2026-06-18',
     image:{
-        path: '/images/Triomphi.png',
-        alt: 'TENET and Piffaro present Triomphi'
+        path: '/images/ampersandGorpCore.jpg',
+        alt: 'Ampersand vocal chamber ensemble'
     },
     timesLocations: [{
-      time: '2024-10-11T19:30',
-      location: ['Philadelphia Episcopal Cathedral', '19 South 38th Street', 'Philadelphia, PA']
-    },
-    {
-      time: '2024-10-12T19:30',
-      location: ['Presbyterian Church of Chestnut Hill', '8855 Germantown Avenue', 'Philadelphia, PA']
-    },
-    {
-      time: '2024-10-13T15:00',
-      location: ['Christ Church Christiana Hundred', '505 East Buck Road', 'Wilmington, DE']
+      time: '2026-06-18T13:15',
+      location: ['St. Malachy\'s Church - The Actors\' Chapel', '239 West 49th Street', 'New York, NY']
     }]
   },
   {
     id: uuid(),
-    title: 'Triomphi',
+    title: 'Naples, Sacred and Profane',
     ensemble: {
-      name: 'TENET Vocal Artists and Piffaro, the Renaissance Band',
-      url: 'https://www.tenet.nyc'
+      name: 'Ampersand',
+      url: 'https://www.weareampersand.net',
     },
-    director: 'Jolle Greenleaf and Priscilla Herreid',
-    description: 'Francesco Petrarch, considered the founder of humanism, was the most influential poet of the Italian Renaissance. He wrote of timeless themes in his Triumphs - Love, Chastity, Death, Fame, Time, Eternity - each more powerful than the last. Our musical interpretation, created by Grant Herreid, will run the gamut of 16th century styles: from light-hearted carnival songs of the early Renaissance, through polyphonic madrigals of Cipriano de Rore and Orlando de Lassus, to the beginnings of 17th century monody. For this, our biggest program of the season, Piffaro joins forces with TENET Vocal Artists and groundbreaking visual designer Camilla Tassi in a musical, artistic, and literary exploration of human experience.',
-    url: 'https://tenet.nyc/triomphi',
+    director: 'Madeline Healey and Tim Parsons',
+    description: 'centered on a 14th c. altarpiece by Lippo Vanni, sacred works interface with the triptych\'s gilded haloes, sumptuous textiles, & devotional symbolism — illuminating the world of 14th c. Italy',
+    url: 'https://events.miami.edu/event/old-masters-in-context-naples-sacred-and-profane',
     image:{
-        path: '/images/Triomphi.png',
-        alt: 'TENET and Piffaro present Triomphi'
+        path: '/images/ampersandGorpCore.jpg',
+        alt: 'Ampersand vocal chamber ensemble'
     },
     timesLocations: [{
-      time: '2024-10-18T20:00',
-      location: ["St. Paul’s Chapel, Columbia University", '1160 Amsterdam Avenue', 'New York, NY']
+      time: '2025-11-06T18:30',
+      location: ['Lowe Art Museum', '1301 Stanford Drive', 'Coral Gables, FL']
     }]
   },
   {
     id: uuid(),
-    title: 'Sleepy Hollow',
+    title: 'Continental',
     ensemble: {
-        name: 'Skylark Vocal Ensemble',
-        url: 'http://www.skylarkensemble.org',
+      name: 'Ampersand',
+      url: 'https://www.weareampersand.net',
     },
-    director: 'Matthew Guard',
-    description: 'Skylark begins the season with a brand new storytelling concert featuring acclaimed storyteller Sarah Walker. Abridged by Artistic Director, Matthew Guard, the beloved ghost story comes alive with spooky whispers, bloodcurdling screeches, bawdy drinking songs, and classic American tunes.',
-    url: 'https://www.skylarkensemble.org/sleepy-hollow.html',
-    image: {
-        path: '/images/SkylarkEnsemblePhoto.jpg',
-        alt: 'Skylark Vocal Ensemble'
+    director: 'Madeline Healey and Tim Parsons',
+    description: 'darkness & light, thick textures & silken threads, unusual continental polyphony for four to six voices',
+    url: 'https://www.weareampersand.net/events',
+    image:{
+        path: '/images/ampersandGorpCore.jpg',
+        alt: 'Ampersand vocal chamber ensemble'
     },
     timesLocations: [{
-        time: '2024-10-24T19:00',
-        location: ['John Wesley United Methodist Church', '270 Gifford Street', 'Falmouth, MA'],
+      time: '2026-01-23T20:00',
+      location: ['Venue TBD','Address TBD','Saranac Lake, NY']
     },{
-        time: '2024-10-25T19:00',
-        location: ["St. Paul's Episcopal Church", '166 High Street', 'Newburyport, MA'],
-    },{
-        time: '2024-10-26T15:00',
-        location: ['Church of the Redeemer', '379 Hammond Street', 'Chestnut Hill, MA']
+      time: '2026-01-24T16:00',
+      location: ['Venue TBD','Address TBD', 'Richmond, VT']
+    }]
+  },
+    {
+    id: uuid(),
+    title: '&&& at the Baldwin Wallace Bach Festival',
+    ensemble: {
+      name: 'Ampersand',
+      url: 'https://www.weareampersand.net',
+    },
+    director: 'Madeline Healey and Tim Parsons',
+    description: 'The vocal ensemble Ampersand—founded and directed by Baldwin Wallace alumna Madeline Healey—presents works drawn from the holdings of the Riemenschneider Bach Institute. Some of this music may not have been performed since its original debut over 300 years ago, offering audiences a truly historic and inspiring listening experience.',
+    url: 'https://www.bw.edu/schools/conservatory/bach-festival',
+    image:{
+        path: '/images/ampersandGorpCore.jpg',
+        alt: 'Ampersand vocal chamber ensemble'
+    },
+    timesLocations: [{
+      time: '2026-04-26T19:00',
+      location: ['Baldwin Wallace University','275 Eastland Road','Berea, OH']
     }]
   },
   {
     id: uuid(),
-    title: 'Ariadne Unbound',
+    title: 'Polyphonic Spree',
     ensemble: {
-      name: 'TENET Vocal Artists',
-      url: 'https://www.tenet.nyc'
+      name: 'Ampersand',
+      url: 'https://www.weareampersand.net',
+    },
+    director: 'Madeline Healey and Tim Parsons',
+    description: 'our community ensemble &chorus returns to join four of our core consort members in a polyphony smorgasbord of connection and delight',
+    url: 'https://www.weareampersand.net/events',
+    image:{
+        path: '/images/ampersandGorpCore.jpg',
+        alt: 'Ampersand vocal chamber ensemble'
+    },
+    timesLocations: [{
+      time: '2026-05-16T16:00',
+      location: ['The Old Round Church', '29 Round Church Road', 'Richmond, VT']
+    }]
+  },
+    {
+    id: uuid(),
+    title: 'Selva morale e spirituale',
+    ensemble: {
+      name: 'Ampersand and Elm City Consort',
+      url: 'https://www.weareampersand.net',
+    },
+    director: 'Madeline Healey, Tim Parsons, and Michael Rigsby',
+    description: 'Virtuoso vocal ensemble Ampersand joins Elm City Consort in a program of selections from Claudio Monteverdi\'s \"Moral and Spiritual Forest.\"',
+    url: 'https://www.elmcityconsort.org/2025-2026-season',
+    image:{
+        path: '/images/ampersandGorpCore.jpg',
+        alt: 'Ampersand vocal chamber ensemble'
+    },
+    timesLocations: [{
+      time: '2026-02-21T19:00',
+      location: ['Bethesda Lutheran Church', '450 Whitney Avenue', 'New Haven, CT']
+    }]
+  },
+  {
+    id: uuid(),
+    title: 'The Tempest Tossed',
+    ensemble: {
+      name: 'Tenet Vocal Artists',
+      url: 'https://tenet.nyc',
     },
     director: 'Jolle Greenleaf and Elisa Sutherland',
-    description: 'TENET retells the story of Ariadne in a lively and dramatic pastiche of 17th Century Italian music. With an intimate cast of six, each singer embodies the main characters of Ariadne, Theseus, and the inhabitants of the island of Naxos. The tale is told through duets, arias, madrigals, and opera scenes by Francesca Caccini, Sigismondo D’India, Barbara Strozzi, and Claudio Monteverdi. Curated by Elisa Sutherland.',
-    url: 'https://tenet.nyc/unbound',
+    description: 'In this \"tossed\" theatrical rendition, our merry cast of singers and instrumentalists tell you the story of how Prospero summons his dutiful servant, Ariel, to conjure a masque for a waiting audience (you!). Will he keep his promise to free Ariel at the end of the evening\'s revels? You\'ll have to come and find out!',
+    url: 'https://tenet.nyc/tempest',
     image:{
-        path: '/images/Ariadne.png',
-        alt: 'TENET presents Ariadne Unbound'
+      path: '/images/TenetGroupCouch.jpg',
+      alt: 'Tenet Vocal Artists'
     },
     timesLocations: [{
-      time: '2024-11-16T18:00',
-      location: ["Park Avenue Christian Church", '1010 Park Avenue', 'New York, NY']
+      time: '2025-10-18T18:00',
+      location: ['Park Avenue Christian Church', '1010 Park Avenue', 'New York, NY']
     }]
   },
   {
     id: uuid(),
-    title: 'A French Twist - À la Vierge - Music for the Virgin Mary and the Nativity',
+    title: 'Stagioni d\'amore',
     ensemble: {
-        name: 'Bach Collegium San Diego',
-        url: 'https://bachcollegiumsd.org'
+      name: 'Tenet Vocal Artists',
+      url: 'https://tenet.nyc',
     },
-    director: 'Ruben Valenzuela and Dana Marsh',
-    description: 'An unusual meeting of repertoire by Charpentier, Poulenc, and Villette covering a span of over three hundred years, yet connected aesthetically by way of musical sensuousness and elegance. BCSD welcomes Guest Director, Dana Marsh (Artistic Director of the Washington Bach Consort and Director of the Historical Performance Institute at the Indiana University Jacobs School of Music).',
-    url: 'https://bachcollegiumsd.org/mainstage-concerts-overview-24-25',
+    director: 'Jolle Greenleaf and Jacob Perry',
+    description: 'Stagioni d\'Amore (Seasons of Love) brings the music of Claudio Monteverdi and Salamone Rossi together in a dramatic tribute to love for every season of the year. Tenet\'s performers explore love\'s emotional highs and lows through madrigals ranging from sprightly to tormented in nature, impassioned arias, and instrumental interludes. You\'ll take in beautiful sounds while being immersed in gorgeous renaissance art-filled projections by designer Camilla Tassi.',
+    url: 'https://tenet.nyc/stagioni',
     image:{
-        path: '/images/BCSD.jpg',
-        alt: 'Bach Collegium San Diego'
+      path: '/images/TenetGroupCouch.jpg',
+      alt: 'Tenet Vocal Artists'
     },
     timesLocations: [{
-        time: '2024-12-06T19:00',
-        location: ['Grace Lutheran Church', '3967 Park Boulevard', 'San Diego, CA']
-    },{
-        time: '2024-12-07T19:00',
-        location: ['St. James-by-the-Sea Episcopal Church', '743 Prospect Street', 'La Jolla, CA']
+      time: '2026-04-11T18:00',
+      location: ['Park Avenue Christian Church', '1010 Park Avenue', 'New York, NY']
     }]
   },
   {
     id: uuid(),
-    title: 'Christmas at Emmanuel',
+    title: 'Ein Kind Geborn',
     ensemble: {
-      name: 'Emmanuel Music', 
-      url: 'https://www.emmanuelmusic.org'
-    }, 
-    role: 'Bass soloist',
-    director: 'Ryan Turner',
-    description: 'Ring in the holiday season with traditions both old and new as we celebrate with uplifting and glorifying works of J.S. Bach setting the stage for the New England premiere of Evan Williams’ Little Mass for Christmas. Start something bright and new with Emmanuel Music this winter. Emmanuel continues its collaboration with local organization Project STEP, which provides talented young musicians that identify with historically underrepresented groups in classical music with comprehensive music instruction. Project STEP envisions a world in which the classical music profession reflects the racial and ethnic diversity of our communities.',
-    url: 'https://www.emmanuelmusic.org/performance-info/christmas-at-emmanuel-2024',
+      name: 'Tenet Vocal Artists and Piffaro, the Renaissance Band',
+      url: 'https://tenet.nyc',
+    },
+    director: 'Jolle Greenleaf and Priscilla Herreid',
+    description: 'A child is born! Step away from the bustle of the season and into the warm, joyful sounds of a German Renaissance Christmas. Piffaro is joined by Tenet Vocal Artists to present music by Praetorius and his contemporaries. We invite you to settle into the beauty of this music, and to be transported to another time.',
+    url: 'https://www.piffaro.org/ein-kind-geborn',
     image:{
-        path: '/images/EmmanuelEnsemblePhoto.webp',
-        alt: 'Emmanuel Music'
+      path: '/images/TenetGroupCouch.jpg',
+      alt: 'Tenet Vocal Artists'
     },
     timesLocations: [{
-      time: '2024-12-15T16:00',
-      location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
+      time: '2025-12-04T19:30',
+      location: ['St. Vincent Ferrer Roman Catholic Church', '869 Lexington Avenue', 'New York, NY']
+    },{
+      time: '2025-12-05T19:30',
+      location: ['Church of the Holy Trinity', '1904 Walnut Street', 'Philadelphia, PA']
+    },{
+      time: '2025-12-06T19:30',
+      location: ['Church of St. Martin-in-the-Fields', '8000 St Martins Lane', 'Philadelphia, PA']
+    },{
+      time: '2025-12-07T15:00',
+      location: ['Westminster Presbyterian Church', '1502 West 13th Street', 'Wilmington, DE']
     }]
   },
   {
     id: uuid(),
-    title: 'Lamentation',
+    title: 'Eagle and Empire: Music of Colonial Mexico',
     ensemble: {
-      name:'Ampersand',
-      url:'https://www.weareampersand.net'
+      name: 'Piffaro, the Renaissance Band',
+      url: 'https://www.piffaro.org',
     },
-    director: 'Madeline Healey and Tim Parsons',
-    description: 'a concert of penitential Tudor music from the 15th & 16th centuries for 5 and 6 voices',
-    url: 'https://www.weareampersand.net/events',
+    director: 'Priscilla Herreid',
+    description: 'The music of Colonial Mexico tells a complex story shaped by power, adaptation, and survival. European and Indigenous traditions collided and combined, creating a new soundscape. Piffaro\'s wind players, joined by guest singers, plucked strings, and percussion, explore this repertoire. The Friday performance at Teatro Esperanza features a special appearance by the Aztec dancers of Ollin Yoliztli Calmecac',
+    url: 'https://www.piffaro.org/eagle-and-empire-music-of-colonial-mexico',
     image:{
-        path: '/images/ampersandEnsemblePhoto.jpg',
-        alt: 'Ampersand vocal chamber ensemble'
+      path: '/images/Piffaro.jpeg',
+      alt: 'Piffaro'
     },
     timesLocations: [{
-      time: '2025-03-09T16:00',
-      location: ['Trinity Episcopal Church', '85 West Street', 'Rutland, VT']
+      time: '2026-05-08T19:30',
+      location: ['The Teatro at Esperanza Arts Center', '4261 North 5th Street', 'Philadelphia, PA']
+    },{
+      time: '2026-05-09T19:30',
+      location: ['The Presbyterian Church of Chestnut Hill', '8855 Germantown Avenue', 'Philadelphia, PA']
+    },{
+      time: '2026-05-10T15:00',
+      location: ['Westminster Presbyterian Church', '1502 West 13th Street', 'Wilmington, DE']
     }]
   },
   {
     id: uuid(),
-    title: 'Equal the Stars in Number: On the Cusp of the 16th Century',
+    title: 'J.S. Bach\'s Easter Oratorio & Magnificat',
     ensemble: {
-      name:'Ampersand',
-      url:'https://www.weareampersand.net'
+      name: 'Upper Valley Baroque',
+      url: 'https://www.uppervalleybaroque.org/',
     },
-    director: 'Madeline Healey and Tim Parsons',
-    description: 'Exploring the astonishing creativity on display in the Chigi Codex and the Eton Choirbook, both compiled in the waning years of the 15th century. This program highlights the floridity and inventiveness of the counterpoint found in these works as well as the curious style of combinative myth-making on display–many of the texts mix imagery from ancient Greek and Roman mythology with flowery exhortations to Mary, the mother of Jesus. The Eton Choirbook is represented by English composers William Horewud, Walter Lambe and William Cornysh; and the Chigi Codex by Franco-Flemish masters Johannes Regis, Gaspar van Weerbeke, and Loyset Compere. ',
-    url: 'https://www.weareampersand.net/events',
+    director: 'Filippo Ciabatti',
+    description: 'Two of Bach\'s powerful works usher us into the season of renewal and hope. This sonic journey through rich orchestral timbres, contemplative arias, and intense polyphony leads to celebratory strains of joy.',
+    url: 'https://www.uppervalleybaroque.org/concerts-2',
     image:{
-        path: '/images/AmpersandGorpCore.jpg',
-        alt: 'Ampersand vocal chamber ensemble'
+      path: '/images/UpperValleyBaroque.webp',
+      alt: 'Upper Valley Baroque'
     },
     timesLocations: [{
-      time: '2025-06-17T19:30',
-      location: ['St. Anne\'s in the Fields', '147 Concord Road', 'Lincoln, MA']
+      time: '2026-03-13T18:00',
+      location: ['Grace Congregational Church', '8 Court Street', 'Rutland, VT']
     },{
-      time: '2025-06-18T19:30',
-      location: ['The Chapel at West Parish', '210 Lowell Street', 'Andover, MA']
+      time: '2026-03-14T15:00',
+      location: ['Chandler Center for the Arts', '71 North Main Street', 'Randolph, VT']
     },{
-      time: '2025-06-19T19:30',
-      location: ['Lindsey Chapel at Emmanuel Church', '15 Newbury Street', 'Boston, MA']
-    },{
-      time: '2025-06-21T16:00',
-      location: ['Keene Arts', '10881 Route 73', 'Keene, NY']
+      time: '2026-03-15T14:00',
+      location: ['Lebanon Opera House', '51 North Park Street', 'Lebanon, NH']
     }]
   },
   {
     id: uuid(),
-    title: 'Take Flight',
+    title: 'The Flute and the Cantata Tradition',
+    ensemble: {
+      name: 'Bach Akademie Charlotte',
+      url: 'https://bacharlotte.com/'
+    },
+    url: 'https://bacharlotte.com/2025-26/winterfest-2026',
+    image: {
+      path: '/images/BachAkademieCharlotteRequiem.jpg',
+      alt: 'Bach Akademie Charlotte Requiem Bows'
+    },
+    description: 'Radiant and alive with color, this program spotlights the flute\'s expressive brilliance—brought vividly to life by the perpetually boundary-pushing Emi Ferguson. Lauded for her \"tonal bloom\" and \"hauntingly beautiful performances,\" she brings a singular flair that seamlessly bridges Baroque elegance and modern creativity. From sparkling concertos to majestic chorales, be swept away by her artistry and the exuberant spirit of Bach and Telemann.',
+    director: 'Guy Fishman and Aisslinn Nosky',
+    timesLocations: [{
+      time: '2026-01-30T19:30',
+      location: ['St. Mark\'s Lutheran Church', '1001 Queens Road', 'Charlotte, NC']
+    }]
+  },
+    {
+    id: uuid(),
+    title: 'Vivaldi\'s Gloria',
+    ensemble: {
+      name: 'Bach Akademie Charlotte',
+      url: 'https://bacharlotte.com/'
+    },
+    url: 'https://bacharlotte.com/2025-26/winterfest-2026',
+    image: {
+      path: '/images/BachAkademieCharlotteRequiem.jpg',
+      alt: 'Bach Akademie Charlotte Requiem Bows'
+    },
+    description: 'Exuberant trumpet, soaring voices, and radiant orchestral colors—Vivaldi\'s Gloria brims with vitality and joy. Alongside Bach\'s rarely heard Lutheran Mass in G minor and Heinichen\'s sparkling concerto, this program reveals the Baroque at its most inventive and uplifting. ',
+    director: 'Guy Fishman and Aisslinn Nosky',
+    timesLocations: [{
+      time: '2026-01-31T19:30',
+      location: ['Venue TBA', 'Address TBA', 'Charlotte, NC']
+    }]
+  },
+  {
+    id: uuid(),
+    title: 'Farewell Unkind: Songs and Dances of John Dowland',
+    ensemble: {
+      name: 'The Boston Camerata',
+      url: 'https://bostoncamerata.org/',
+    },
+    director: 'Anne Azéma',
+    description: 'To celebrate the anniversary of John Dowland, lutenist to Queen Elizabeth the First and the greatest English song writer until Purcell and Britten, we present a program of airs, dances, hymns and fantasies, for voices and instruments. With British lute virtuoso Nigel North.',
+    url: 'https://bostoncamerata.org/performances/#prog-204',
+    image:{
+      path: '/images/BostonCamerata.jpeg',
+      alt: 'The Boston Camerata'
+    },
+    timesLocations: [{
+      time: '2026-02-15T16:00',
+      location: ['Pickman Concert Hall, Longy School of Music', '27 Garden Street', 'Cambridge, MA']
+    }]
+  },
+  {
+    id: uuid(),
+    title: 'Clear Voices in the Dark',
     ensemble: {
         name: 'Skylark Vocal Ensemble',
         url: 'http://www.skylarkensemble.org',
     },
     director: 'Matthew Guard',
-    description: 'Skylark takes to the skies to celebrate its avian roots in a new program exploring music inspired by creatures that fill the air. This concert will feature a choral & violin arrangement of Ralph Vaughan William’s The Lark Ascending alongside other spritely springtime songs.',
-    url: 'https://www.skylarkensemble.org/take-flight.html',
+    description: 'Francis Poulenc\'s Figure Humaine is one of the greatest works ever composed for unaccompanied choir - composed in 1943 in occupied France, and based on resistance-inspired poems by Paul Éluard, it is a stunning 8-movement exploration of the grim realities of war, culminating in an optimistic and embattled cry for liberty in the face of oppression. Skylark\'s innovative concert program, Clear Voices in the Dark, is a powerful cross-cultural statement about the expressive power of the arts, and specifically the human voice, in times of tragedy. Interspersed between Poulenc\'s stirring and complex settings, Skylark offers far simpler (but no less beautiful) musical images from the American Civil War era. Skylark shares some well-known pieces that have remained in the popular consciousness, as well as beautiful war-inspired songs that have long since been forgotten (and only found thanks to the Duke University Historical Archives).',
+    url: 'https://www.skylarkensemble.org/clearvoices2026.html',
     image: {
         path: '/images/SkylarkEnsemblePhoto.jpg',
         alt: 'Skylark Vocal Ensemble'
     },
     timesLocations: [{
-        time: '2025-03-13T19:00',
-        location: ['John Wesley United Methodist Church', '270 Gifford Street', 'Falmouth, MA'],
+        time: '2026-05-25T15:00',
+        location: ['Lawrence School Memorial Auditorium', '113 Lakeview Avenue', 'Falmouth, MA'],
     },{
-        time: '2025-03-14T19:00',
-        location: ["St. Paul's Episcopal Church", '166 High Street', 'Newburyport, MA'],
+        time: '2026-05-28T19:00',
+        location: ["Rockport Music-Shalin Liu Performance Center", '37 Main Street', 'Rockport, MA'],
     },{
-        time: '2025-03-15T15:00',
-        location: ['Church of the Redeemer', '379 Hammond Street', 'Chestnut Hill, MA']
-    }]
-  },
-  {
-    id: uuid(),
-    title: 'Haydn + Beethoven',
-    ensemble: {
-        name: 'Handel and Haydn Society',
-        url: 'https://handelandhaydn.org'
-    },
-    director: 'Jonathan Cohen',
-    description: 'Reawaken your senses, reinvigorate your spirit, and celebrate spring with your H+H community! Harmonies burst through the Symphony Hall air like daffodils through the snow as Jonathan Cohen leads the superlative H+H Orchestra and Chorus in that sweetest of Haydn’s The Seasons. Then, our “gem of a chorus…makes a truly glorious noise” (The Boston Musical Intelligencer) as serenity gives way to rapture in Beethoven’s mesmerizing Mass in C Major.',
-    url: 'https://handelandhaydn.org/concerts/2024-25/haydn-beethoven/',
-    image: {
-        path: '/images/HandH.png',
-        alt: 'Handel and Haydn Society director Jonathan Cohen'
-    },
-    timesLocations: [{
-        time: '2025-03-28T19:30',
-        location: ['Symphony Hall', '301 Massachusetts Avenue', 'Boston, MA']
-    },{
-        time: '2025-03-30T15:00',
-        location: ['Symphony Hall', '301 Massachusetts Avenue', 'Boston, MA']
-    }]
-  },
-  {
-    id: uuid(),
-    title: 'Monteverdi Vespers of 1610',
-    ensemble: {
-        name: 'Pegasus Early Music',
-        url: 'https://www.pegasusearlymusic.org'
-    },
-    director: 'Deborah Fox and Paul O’Dette',
-    description: 'The iconic masterpiece, to celebrate our 20th season! Paul O’Dette conducts twenty-five brilliant Pegasus musicians, including singers, trombones, cornettos, strings, and theorbos.',
-    url: 'https://www.pegasusearlymusic.org/concert/monteverdi-vespers-of-1610-2/',
-    image: {
-        path: '/images/PegasusNoel.png',
-        alt: 'Pegasus Early Music'
-    },
-    timesLocations: [{
-        time: '2025-04-06T16:00',
-        location: ['Asbury First United Methodist Church', '1050 East Avenue', 'Rochester, NY']
-    }]
-  },
-  {
-    id: uuid(),
-    title: 'Monteverdi Vespers of 1610',
-    ensemble: {
-        name: 'NYS Baroque',
-        url: 'https://nysbaroque.com'
-    },
-    director: 'Deborah Fox and Paul O’Dette',
-    description: 'The iconic masterpiece, to celebrate our 20th season! Paul O’Dette conducts twenty-five brilliant Pegasus musicians, including singers, trombones, cornettos, strings, and theorbos.',
-    url: 'https://nysbaroque.com',
-    image: {
-        path: '/images/PegasusNoel.png',
-        alt: 'Pegasus Early Music'
-    },
-    timesLocations: [{
-        time: '2025-04-04T19:30',
-        location: ['St. Paul\'s Syracuse', '310 Montgomery Street', 'Syracuse, NY']
-    },{
-        time: '2025-04-05T19:30',
-        location: ['First Presbyterian Church', '315 North Cayuga Street', 'Ithaca, NY']
-    }]
-  },
-  {
-    id: uuid(),
-    title: 'Rachmaninoff Vespers',
-    ensemble: {
-        name: 'Skylark Vocal Ensemble',
-        url: 'http://www.skylarkensemble.org',
-    },
-    director: 'Matthew Guard',
-    description: 'An apocryphal story recounts that when conductor Nikolai Danilin first heard Sergei Rachmaninoff play the score for his All-Night Vigil  (‘Vespers’), Danilin said \"Where am I to get such basses? They are as rare as Asparagus at Christmas!\" Skylark returns this spring with its stunning rendition of Rachmaninoff\'s Vespers, performing from its own edition of the score prepared by Artistic Director Matthew Guard and Skylark Soprano Fotina Naumenko. ',
-    url: 'https://www.skylarkensemble.org/take-flight.html',
-    image: {
-        path: '/images/SkylarkEnsemblePhoto.jpg',
-        alt: 'Skylark Vocal Ensemble'
-    },
-    timesLocations: [{
-        time: '2025-04-30T19:00',
-        location: ['Corpus Christi Parish', '324 Quaker Meetinghouse Road', 'East Sandwich, MA'],
-    },{
-        time: '2025-05-01T19:00',
-        location: ["St. Paul's Episcopal Church", '166 High Street', 'Newburyport, MA'],
-    },{
-        time: '2025-05-02T19:00',
-        location: ['St. Paul\'s Parish, Harvard Square', '29 Mount Auburn Street', 'Cambridge, MA']
-    },{
-        time: '2025-05-04T15:00',
-        location: ['Christ Church Greenwich', '254 East Putnam Avenue', 'Greenwich, CT']
-    }]
-  },
-  {
-    id: uuid(),
-    title: 'Residency: University of Oregon',
-    ensemble: {
-        name: 'Kaleidoscope Vocal Ensemble',
-        url: 'https://www.kaleidoscopevocalensemble.com'
-    },
-    director: 'Arianne Abela',
-    description: 'Comprised of artists with thriving solo careers who celebrate racial, ethnic, and gender diversity, Kaleidoscope Vocal Ensemble performs a program of works by Monteverdi and Purcell, as well as contemporary composers Caroline Shaw, Reena Esmail, and more.',
-    url: 'https://www.kaleidoscopevocalensemble.com/kve-events/kaleidoscope-in-concert-university-of-oregon',
-    image: {
-        path: '/images/KaleidoscopeVocalEnsemble.jpg',
-        alt: 'Kaleidoscope Vocal Ensemble'
-    },
-    timesLocations: [{
-        time: '2025-01-12T15:00',
-        location: ['Beall Concert Hall', '961 East 18th Avenue', 'Eugene, OR']
-    }]
-  },
-  {
-    id: uuid(),
-    title: 'Bach: Ich lasse dich nicht, du segnest mich denn, BWV 157',
-    ensemble: {
-      name: 'Emmanuel Music', 
-      url: 'https://www.emmanuelmusic.org'
-    }, 
-    role: 'Bass soloist',
-    director: 'Ryan Turner',
-    description: 'Bach’s magnificent cantatas have been presented as part of the Sunday morning worship service at Emmanuel Church since 1970. Founding Artistic Director Craig Smith initiated the series which has continued to the present day. In addition to Bach, this season features premieres by Elena Ruehr and Kati Agócs, and commissioned motets by Nell Shaw Cohen, Trevor Weston, Peter Child, Philip Lasser and Evan Williams. All are welcome to attend the service, which begins at 10:00 AM.',
-    url: 'https://www.emmanuelmusic.org/performance-info/2024-2025-cantata-schedule',
-    image:{
-        path: '/images/EmmanuelEnsemblePhoto.webp',
-        alt: 'Emmanuel Music'
-    },
-    timesLocations: [{
-      time: '2025-02-02T10:00',
-      location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
-    }]
-  },
-  {
-    id: uuid(),
-    title: 'Bach: Der Herr ist mein getreuer Hirt, BWV 112',
-    ensemble: {
-      name: 'Emmanuel Music', 
-      url: 'https://www.emmanuelmusic.org'
-    }, 
-    role: 'Bass soloist',
-    director: 'Ryan Turner',
-    description: 'Bach’s magnificent cantatas have been presented as part of the Sunday morning worship service at Emmanuel Church since 1970. Founding Artistic Director Craig Smith initiated the series which has continued to the present day. In addition to Bach, this season features premieres by Elena Ruehr and Kati Agócs, and commissioned motets by Nell Shaw Cohen, Trevor Weston, Peter Child, Philip Lasser and Evan Williams. All are welcome to attend the service, which begins at 10:00 AM.',
-    url: 'https://www.emmanuelmusic.org/performance-info/2024-2025-cantata-schedule',
-    image:{
-        path: '/images/EmmanuelEnsemblePhoto.webp',
-        alt: 'Emmanuel Music'
-    },
-    timesLocations: [{
-      time: '2025-05-11T10:00',
-      location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
-    }]
-  },
-  {
-    id: uuid(),
-    title: 'Bach: St. John Passion',
-    ensemble: {
-      name: 'American Classical Orchestra',
-      url: 'https://aconyc.org/'
-    },
-    role: 'Bass soloist',
-    director: 'Thomas Crawford',
-    description: 'Bach’s St. John Passion is not the first oratorio he wrote but it is his earliest such work to survive.  He composed it just after his 39th birthday, for a vesper service on Good Friday, while he was director of church music in Leipzig.  It premiered on April 7, 1724, three years before St. Matthew, his only other surviving Passion (of the five he wrote) was performed, also on a Good Friday in Leipzig.\nWhile oratorios were originally developed as large-scale musical compositions for solo voices, chorus, and orchestra, celebrating a religious subject, because of their length (often four hours or more), they were not intended for liturgical use.  They were generally performed in churches or concert halls, with the music divided in two parts, separated by a sermon.\nThe earliest known oratorio dates from 1600 and involves dramatic action, including a ballet.  By Bach’s time, the form had undergone significant changes, action had been abandoned, and the use of predominantly Latin or Italian texts had been modified by German composers, beginning with Heinrich Schütz, who blended German and Italian elements.  What Bach contributed to the genre was a vigorous treatment of the choruses and the use of narrative as a binding element, dramatically linking the arias to the chorales and choruses, holding the entire structure together in a way that is richly expressive, powerful, and affecting.',
-    url: 'https://aconyc.org/season-40/st-john-passion/',
-    image:{
-      path: '/images/ACO-Full-w-Chorus.webp',
-      alt: 'American Classical Orchestra'
-    },
-    timesLocations: [{
-      time: '2025-01-30T19:30',
-      location: ['Alice Tully Hall, Lincoln Center', '1941 Broadway at West 65th Street', 'New York, NY']
-    }]
-  },
-  {
-    id: uuid(),
-    title: 'Handel\'s Messiah: As Heard in His Time',
-    ensemble: {
-      name: 'Cantata Singers with Finger Lakes Early Music',
-      url: 'https://www.cantatasingers.com/'
-    },
-    role: 'Bass soloist',
-    director: 'Will Wickham and Caroline Giassi',
-    description: 'Experience the power and beauty of Handel\'s MESSIAH with the Cantata Singers on Saturday, May 17th at 7:30 PM at Grace Episcopal Church in Elmira. Prepare to be transported to 18th-century London as our dedicated local singers, together with renowned Baroque specialists Elijah McCormack, Virginia Kelsey, Dann Coakwell, and Andrew Padgett bring portions of this great work to life. Their voices will soar above the rich textures of an orchestra of Baroque musicians playing authentic period instruments, bringing Handel\'s masterpiece to life with unparalleled grandeur. Don\'t miss this extraordinary opportunity to witness Messiah performed in its most authentic form by passionate local talent and world-class artists.',
-    url: 'https://www.cantatasingers.com/may-25-messiah-program',
-    image: {
-      path: '/images/ElmiraGraceWindow.jpg',
-      alt: 'Window in Grace Church, Elmira NY'
-    },
-    timesLocations: [{
-      time: '2025-05-17T19:30',
-      location: ['Grace Episcopal Church', '375 West Church Street', 'Elmira, NY']
-    }]
-  },
-  {
-    id: uuid(),
-    title: 'JS Bach: Nun komm, der Heiden Heiland, BWV 61',
-    ensemble: {
-      name: 'Bach Akademie Charlotte',
-      url: 'https://bacharlotte.com/'
-    },
-    url: 'https://bacharlotte.com/2024-25/2025-festival/tuning-in-bach-bwv-61',
-    image: {
-      path: '/images/BachAkademieCharlotte.jpg',
-      alt: 'Bach Akademie Charlotte Background'
-    },
-    description: 'Johann Sebastian Bach composed the church cantata Nun komm, der Heiden Heiland (Now come, Savior of the heathens), BWV 61, in Weimar for the first Sunday in Advent, the Sunday which begins the liturgical year, and first performed it on December 2, 1714. For Lutherans, the festive start to the liturgical year had a hopeful character. After all, it was almost Christmas time.\n\nOn March 2, 1714 Bach was appointed concertmaster of the Weimar court capelle of the co-reigning dukes Wilhelm Ernst and Ernst August of Saxe-Weimar. As concertmaster, he assumed the principal responsibility for composing new works, specifically cantatas for the Schlosskirche (palace church), on a monthly schedule.\n\nBach structured this cantata in six movements, beginning with chorale fantasia, followed by a series of alternating recitatives and arias and concluded by a chorale. The words of the cantata are derived from Luther\'s Advent chorale Nun komm, der Heiden Heiland, which was well-known at the time. The first and the last movement follow Luther\'s text literally, and the middle movements are based on it.\n\nThis melody is first documented as a Roman Catholic Latin hymn based upon Gregorian chant in manuscript form in Einsiedeln (Switzerland) around 1120. ',
-    director: 'Guy Fishman and Aisslinn Nosky',
-    timesLocations: [{
-      time: '2025-06-05T12:00',
-      location: ['Myers Park Presbyterian Church', '2501 Oxford Place', 'Charlotte, NC']
-    }]
-  },
-  {
-    id: uuid(),
-    title: 'JS Bach: Meine Seel erhebt den Herren, BWV 10',
-    ensemble: {
-      name: 'Bach Akademie Charlotte',
-      url: 'https://bacharlotte.com/'
-    },
-    url: 'https://bacharlotte.com/2024-25/2025-festival/tuning-in-bach-bwv-10',
-    image: {
-      path: '/images/BachAkademieCharlotte.jpg',
-      alt: 'Bach Akademie Charlotte Background'
-    },
-    description: 'Johann Sebastian Bach composed the church cantata Meine Seel erhebt den Herren (My soul magnifies the Lord), in 1724 as part of his second cantata cycle. By early July, Bach was more than a month into his second year as Thomaskantor in Leipzig. Meine Seel erhebt den Herren is the fifth of 40 chorale cantatas he started that year. \n\nBach adopted the text and the melody of Martin Luther\'s German Magnificat in various compositions, including this one. (Meine Seel erhebt den Herren, BWV 10 is also known as Bach\'s German Magnificat.)\n\nThe work follows Bach\'s chorale cantata format. The outer movements of the cantata are set for mixed choir and an orchestra consisting of trumpet, two oboes, strings and continuo. Luther\'s translation of Luke 1:46-48 provides the text for the first movement. The canticle\'s doxology is the text of the last movement, and the five middle movements are a succession of arias and recitatives.',
-    director: 'Guy Fishman and Aisslinn Nosky',
-    timesLocations: [{
-      time: '2025-06-06T12:00',
-      location: ['Myers Park Presbyterian Church', '2501 Oxford Place', 'Charlotte, NC']
-    }]
-  },
-  {
-    id: uuid(),
-    title: 'Mozart Requiem',
-    ensemble: {
-      name: 'Bach Akademie Charlotte',
-      url: 'https://bacharlotte.com/'
-    },
-    url: 'https://bacharlotte.com/2024-25/2025-festival/mozart-requiem',
-    image: {
-      path: '/images/BachAkademieCharlotte.jpg',
-      alt: 'Bach Akademie Charlotte Background'
-    },
-    role: 'Bass soloist',
-    description: 'A requiem, of course, is music for a religious ceremony intended to honor the memory of, and make a plea for, those who have passed away. In early July of 1791, an \'unknown, gray stranger\' showed up at Mozart\'s door, requesting an anonymous commission to compose a Requiem Mass—on the understanding that Mozart not seek to learn the identity of his patron. Mozart accepted, and the stranger paid for the Requiem in full.\n\nMozart\'s study of traditions of funeral music likely played a role in the Requiem\'s composition, as well as his recent affinity for Baroque counterpoint. Mozart begins in the key of D minor, the same key used to conjure the terrifying sounds in his opera Don Giovanni, as the titular character is carried by demons down into Hell.\n\nIn ill health and near death, Mozart completed the Requiem and Kyrie movements, and managed to sketch the voice parts and bass lines for the Dies irae through to the Hostias. But before he could complete the work, Mozart died on December 5, 1791, at the age of 35. His widow Constanze feared that if she handed over an incomplete work, the mystery patron would demand his money back. She asked Joseph Eybler to finish the score, but after orchestrating the music following the Kyrie, Eybler handed it over to Mozart\'s pupil Franz Xaver Süssmayer.\n\nSüssmayer completed the work, copying the entire completed score in his own hand. There is to this day controversy over who actually composed what in the remaining sections of the Requiem, and how much—or how little—Mozart dictated the notes or outlines of those movements.\n\nThe unknown patron was Anton Leitgeb, son of the mayor of Vienna and the valet of Count Franz von Walsegg-Stuppach. Leitgeb had a well-earned reputation for promoting other people\'s music as his own. The Count was hoping to use Mozart\'s Requiem to commemorate his late wife, Anna. It took a decade before Constanze was able to persuade Walsegg to acknowledge Mozart as the Requiem\'s true composer. Well, at least part of it, anyway.\n\nThe end result is a powerful exploration of grief and mortality that contains some of Mozart\'s darkest music. It is one of the most famous choral works in the classical repertoire—a masterpiece that will stir your emotions.',
-    director: 'Guy Fishman and Aisslinn Nosky',
-    timesLocations: [{
-      time: '2025-06-07T19:30',
-      location: ['Sandra Levine Theatre - Sarah Belk Gambrell Center, Queens University of Charlotte', '2319 Wellesley Avenue', 'Charlotte, NC']
+        time: '2026-05-30T15:00',
+        location: ['Madison Avenue Presbyterian Church', '921 Madison Avenue', 'New York, NY']
     }]
   }
 ]
