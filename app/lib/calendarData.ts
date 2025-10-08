@@ -4,6 +4,26 @@ import { Event } from './definitions';
 export const events: Event[] = [
   {
     id: uuid(),
+    title: '2025 Festival: Cantatas',
+    ensemble: {
+      name: 'Viva Bach Peterborough',
+      url: 'https://www.vivabachpeterborough.org/'
+    },
+    role: 'Bass soloist',
+    director: 'Veronika Schreiber and Colin Mann',
+    description: 'Bach\'s cantatas were his spiritual diary, written to illuminate the church calendar with music of astonishing power. Under the direction of Colin Mann, the Festival Chorus and Festival Ensemble join distinguished soloists to perform two of Bach\'s great sacred works: Cantata 65 (They will all come forth out of Sheba), a festive piece celebrating the Epiphany, and Cantata 78 (Jesus, who has rested my soul), a masterwork of devotion that combines dramatic choruses with tender arias. Rich in theological depth and musical brilliance, these cantatas capture Bach\'s ability to blend faith and artistry into an uplifting communal experience. ',
+    url: 'https://www.vivabachpeterborough.org/concerts/2025-festival-cantatas',
+    image:{
+        path: '/images/VivaBach.webp',
+        alt: 'Viva Bach Peterborough'
+    },
+    timesLocations: [{
+      time: '2025-10-26T16:00',
+      location: ['Peterborough Town Hall', '1 Grove Street', 'Peterborough, NH'],
+    }]
+  },
+  {
+    id: uuid(),
     title: 'Bach: Wer Dank opfert, der preiset mich, BWV 17',
     ensemble: {
       name: 'Emmanuel Music',
