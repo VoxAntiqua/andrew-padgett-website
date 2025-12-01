@@ -419,5 +419,29 @@ export const events: Event[] = [
         time: '2026-05-30T15:00',
         location: ['Madison Avenue Presbyterian Church', '921 Madison Avenue', 'New York, NY']
     }]
+  },
+  {
+    id: uuid(),
+    title: 'A Christmas Carol with Christine Baranski',
+        ensemble: {
+        name: 'Skylark Vocal Ensemble',
+        url: 'http://www.skylarkensemble.org',
+    },
+    director: 'Matthew Guard',
+    description: 'Experience the magic of Charles Dickens\'s A Christmas Carol in Skylark\'s musical interpretation, narrated by actor Christine Baranski. Working from the original text abridged by Skylark artistic director Matthew Guard, composer Benedict Sheehan has created a score that weaves familiar Christmas carols into the fabric of the Dickens story for an unforgettable new version of a holiday classic.',
+    url: 'https://www.skylarkensemble.org/christmas-carol-2025.html',
+        image: {
+        path: '/images/SkylarkEnsemblePhoto.jpg',
+        alt: 'Skylark Vocal Ensemble'
+    },
+    timesLocations: [
+      {
+        time: '2025-12-18T19:00',
+        location: ['The Morgan Library & Museum', '225 Madison Avenue', 'New York, NY']
+      },{
+        time: '2025-12-19T18:00',
+        location: ['The Breakers', '44 Ochre Point Avenue', 'Newport, RI']
+      }
+    ]
   }
 ]
