@@ -1,5 +1,6 @@
-import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence, HTMLMotionProps } from "framer-motion";
+import { createPortal } from "react-dom";
 import { HiX } from "react-icons/hi";
 
 interface ModalProps {
@@ -8,14 +9,26 @@ interface ModalProps {
   children: React.ReactNode;
 }
 
+type MotionDivProps = HTMLMotionProps<"div">;
+
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
-  return (
+  const [mounted, setMounted] = useState(false);
+
+  // Ensure portal is only rendered on the client
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
+  return createPortal(
     <AnimatePresence>
       {isOpen && (
         <div
-          className="lg:hidden fixed inset-0 flex items-center justify-center z-50"
+          className="fixed inset-0 flex items-center justify-center z-50"
           onClick={onClose}
         >
+          {/* Overlay */}
           <motion.div
             className="fixed inset-0 bg-black bg-opacity-50"
             initial={{ opacity: 0 }}
@@ -23,11 +36,13 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
           />
+
+          {/* Modal content */}
           <motion.div
             className="bg-white shadow-lg max-w-sm w-full mx-4 p-4 z-10 relative"
-            initial={{ opacity: 0, scale: 0.9, y: 50 }}
+            initial={{ opacity: 0, scale: 0.9, y: 0 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.9, y: 50 }}
+            exit={{ opacity: 0, scale: 0.9, y: 0 }}
             transition={{ duration: 0.3 }}
             onClick={(e) => e.stopPropagation()}
           >
@@ -41,7 +56,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
           </motion.div>
         </div>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 };
 
