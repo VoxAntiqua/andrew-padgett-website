@@ -18,7 +18,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
 
   if (!mounted) return null;
 
-  const overlayProps: HTMLMotionProps<"div"> = {
+  // Correctly type the overlay and content motion.divs
+  const overlayProps: HTMLMotionProps<"div"> & { className: string } = {
     className: "fixed inset-0 bg-black bg-opacity-50",
     initial: { opacity: 0 },
     animate: { opacity: 1 },
@@ -27,7 +28,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
     onClick: onClose,
   };
 
-  const contentProps: HTMLMotionProps<"div"> = {
+  const contentProps: HTMLMotionProps<"div"> & { className: string } = {
     className: "bg-white shadow-lg max-w-sm w-full mx-4 p-4 z-10 relative",
     initial: { opacity: 0, scale: 0.9, y: 0 },
     animate: { opacity: 1, scale: 1, y: 0 },
