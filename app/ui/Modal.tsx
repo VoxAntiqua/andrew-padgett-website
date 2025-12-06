@@ -18,9 +18,9 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
           className="lg:hidden fixed inset-0 flex items-center justify-center z-50"
           onClick={onClose}
         >
-          {/* Overlay - using motion() factory for type safety */}
+          {/* Overlay */}
           {React.createElement(
-            motion.div,
+            motion.div as any,
             {
               className: "fixed inset-0 bg-black bg-opacity-50",
               initial: { opacity: 0 },
@@ -30,9 +30,9 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
             }
           )}
           
-          {/* Content - using motion() factory for type safety */}
+          {/* Content */}
           {React.createElement(
-            motion.div,
+            motion.div as any,
             {
               className: "bg-white shadow-lg max-w-sm w-full mx-4 p-4 z-10 relative",
               initial: { opacity: 0, scale: 0.9, y: 50 },
