@@ -1,9 +1,9 @@
 import React from "react";
 import { Event } from "@/app/lib/definitions";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { ibarra } from "../fonts";
 import TimeLocationBlock from "./TimeLocationBlock";
+import MotionDiv from "@/app/ui/MotionDiv";
 
 interface EventDetailsProps {
   event: Event;
@@ -16,7 +16,7 @@ const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
   const isPastEvent = lastEventDate < currentDate;
 
   return (
-    <motion.div
+    <MotionDiv
       className="w-full max-h-[calc(100vh-15rem)] overflow-y-auto p-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -76,7 +76,7 @@ const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
           <TimeLocationBlock key={index} time={tl.time} location={tl.location} />
         ))}
       </ul>
-    </motion.div>
+    </MotionDiv>
   );
 };
 
