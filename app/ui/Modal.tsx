@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { motion, AnimatePresence, HTMLMotionProps } from "framer-motion";
+import { motion, AnimatePresence, MotionProps } from "framer-motion";
 import { createPortal } from "react-dom";
 import { HiX } from "react-icons/hi";
 
@@ -9,12 +9,9 @@ interface ModalProps {
   children: React.ReactNode;
 }
 
-type MotionDivProps = HTMLMotionProps<"div">;
-
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
   const [mounted, setMounted] = useState(false);
 
-  // Ensure portal is only rendered on the client
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -30,6 +27,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
         >
           {/* Overlay */}
           <motion.div
+            {...({} as MotionProps)}
+            style={{}}
             className="fixed inset-0 bg-black bg-opacity-50"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -39,6 +38,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
 
           {/* Modal content */}
           <motion.div
+            {...({} as MotionProps)}
+            style={{}}
             className="bg-white shadow-lg max-w-sm w-full mx-4 p-4 z-10 relative"
             initial={{ opacity: 0, scale: 0.9, y: 0 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
