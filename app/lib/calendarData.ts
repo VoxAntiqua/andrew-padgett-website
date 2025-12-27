@@ -62,6 +62,26 @@ export const events: Event[] = [
       location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
     }]
   },
+    {
+    id: uuid(),
+    title: 'Bach: Ach Gott, wie manches Herzeleid, BWV 58',
+    ensemble: {
+      name: 'Emmanuel Music',
+      url: 'https://www.emmanuelmusic.org'
+    },
+    role: 'Bass soloist',
+    director: 'Michael Beattie',
+    description: 'Emmanuel Music is one of the only organizations in the world that regularly performs Bach\'s cantatas within the liturgical context for which they were intended. The Sunday Eucharist at Emmanuel Church begins at 10:00 AM with the cantata performance beginning just before the closing hymn.',
+    url: 'https://www.emmanuelmusic.org/performance-info/2025-2026-cantata-schedule',
+    image:{
+        path: '/images/EmmanuelEnsemblePhoto.webp',
+        alt: 'Emmanuel Music'
+    },
+    timesLocations: [{
+      time: '2026-01-04T10:00',
+      location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
+    }]
+  },
   {
     id: uuid(),
     title: 'Bach: Christmas Oratorio',
