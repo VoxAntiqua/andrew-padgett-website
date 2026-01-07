@@ -179,10 +179,10 @@ export const events: Event[] = [
     },
     timesLocations: [{
       time: '2026-01-23T20:00',
-      location: ['Venue TBD','Address TBD','Saranac Lake, NY']
+      location: ['Church of St. Luke the Beloved Physician','136 Main Street','Saranac Lake, NY']
     },{
       time: '2026-01-24T16:00',
-      location: ['Venue TBD','Address TBD', 'Richmond, VT']
+      location: ['College Street Church','265 College Street', 'Burlington, VT']
     }]
   },
     {
