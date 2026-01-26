@@ -331,6 +331,9 @@ export const events: Event[] = [
     },{
       time: '2026-05-10T15:00',
       location: ['Westminster Presbyterian Church', '1502 West 13th Street', 'Wilmington, DE']
+    },{
+      time: '2026-05-12T19:00',
+      location: ['The Church of Saint Luke in the Fields', '487 Hudson Street', 'New York, NY']
     }]
   },
   {
