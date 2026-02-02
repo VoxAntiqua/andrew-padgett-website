@@ -245,23 +245,61 @@ export const events: Event[] = [
       location: ['College Street Church','265 College Street', 'Burlington, VT']
     }]
   },
-    {
+  {
     id: uuid(),
-    title: '&&& at the Baldwin Wallace Bach Festival',
+    title: '&&& at the Baldwin Wallace Bach Festival: Concerto Countdown',
     ensemble: {
       name: 'Ampersand',
       url: 'https://www.weareampersand.net',
     },
     director: 'Madeline Healey and Tim Parsons',
-    description: 'The vocal ensemble Ampersand—founded and directed by Baldwin Wallace alumna Madeline Healey—presents works drawn from the holdings of the Riemenschneider Bach Institute. Some of this music may not have been performed since its original debut over 300 years ago, offering audiences a truly historic and inspiring listening experience.',
+    description: 'This evening\'s program features Bach\'s brilliant concerti for four, three, and two harpsichords—all performed on a single concert with alumni and guest soloists. Because of their unusual scoring for multiple keyboards, these works are rarely heard in live performance, making this an extraordinary opportunity. \n\nBetween the concerti, the vocal ensemble Ampersand—founded and directed by Baldwin Wallace alumna Madeline Healey—presents works drawn from the holdings of the Riemenschneider Bach Institute. Some of this music may not have been performed since its original debut over 300 years ago, offering audiences a truly historic and inspiring listening experience.',
     url: 'https://www.bw.edu/schools/conservatory/bach-festival',
     image:{
         path: '/images/ampersandGorpCore.jpg',
         alt: 'Ampersand vocal chamber ensemble'
     },
     timesLocations: [{
-      time: '2026-04-26T19:00',
-      location: ['Baldwin Wallace University','275 Eastland Road','Berea, OH']
+      time: '2026-04-17T19:00',
+      location: ['Baldwin Wallace University Gamble Auditorium','49 Seminary Street','Berea, OH']
+    }]
+  },
+  {
+    id: uuid(),
+    title: 'Mass Appeal: Berliner Mass and Magnificat—masterworks of Arvo Pärt',
+    ensemble: {
+      name: 'BWV: Cleveland\'s Bach Choir',
+      url: 'https://www.bw.edu/schools/conservatory/bach-festival/',
+    },
+    director: 'Dirk Garner',
+    description: 'This intimate performance features music by one of the most influential composers of our time, Arvo Pärt. His music is often described as ethereal, austere, and contemplative. Pärt is recognized for creating his systematic compositional approach known as tintinnabuli. His Berliner Mass and Magnificat are quintessential examples of this process. Pärt\'s music is profoundly intellectual while at the same time deeply powerful—qualities we also find in the music of J. S. Bach, where intellect and emotion are fused.\n\nBWV: Cleveland\'s Bach Choir was founded to bring the finest ensemble singers to our campus. Each year, four students from the Baldwin Wallace Motet Choir are selected to sing alongside BWV during a week of performances and concerts. This opportunity is truly unique for undergraduate students, as similar experiences are only at the graduate level at a handful of elite institutions. The choir\'s mission is to introduce BW students to professional-level consort singing while helping them make the contacts that will support their careers beyond opera and into the broader world of vocal performance.',
+    url: 'https://www.bw.edu/schools/conservatory/bach-festival',
+    image:{
+        path: '/images/BaldwinWallace.jpg',
+        alt: 'Baldwin Wallace Bach Festival'
+    },
+    timesLocations: [{
+      time: '2026-04-18T14:00',
+      location: ['Baldwin Wallace University Lindsay-Crossman Chapel','56 Seminary Street','Berea, OH']
+    }]
+  },
+    {
+    id: uuid(),
+    title: 'Mass Appeal: Mass in G Minor and Magnificat—J. S. Bach',
+    ensemble: {
+      name: 'BWV: Cleveland\'s Bach Choir',
+      url: 'https://www.bw.edu/schools/conservatory/bach-festival/',
+    },
+    director: 'Dirk Garner',
+    description: 'In addition to the monumental Mass in B Minor—perhaps Bach\'s most famous work—he also composed four shorter masses, often called the Kyrie-Gloria Masses. Though performed less frequently, these works are masterful in their own right. This year\'s Festival features the Mass in G Minor, performed by the BW Motet Choir, Orchestra, and guest soloists—marking the work\'s first appearance at the BW Bach Festival.\n\nClosing the 2026 Festival is Bach\'s brilliant Magnificat, often described as a “mini Mass in B Minor” for its epic design and expressive power, it remains one of Bach\'s greatest and most beloved choral works.',
+    url: 'https://www.bw.edu/schools/conservatory/bach-festival',
+    image:{
+        path: '/images/BaldwinWallace.jpg',
+        alt: 'Baldwin Wallace Bach Festival'
+    },
+    timesLocations: [{
+      time: '2026-04-18T19:00',
+      location: ['Baldwin Wallace University Gamble Auditorium','49 Seminary Street','Berea, OH']
     }]
   },
   {
