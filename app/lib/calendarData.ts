@@ -44,6 +44,66 @@ export const events: Event[] = [
   },
   {
     id: uuid(),
+    title: 'Bach: Brich dem Hungrigen dein Brot, BWV 39',
+    ensemble: {
+      name: 'Emmanuel Music',
+      url: 'https://www.emmanuelmusic.org'
+    },
+    role: 'Bass soloist',
+    director: 'Ryan Turner',
+    description: 'Emmanuel Music is one of the only organizations in the world that regularly performs Bach\'s cantatas within the liturgical context for which they were intended. The Sunday Eucharist at Emmanuel Church begins at 10:00 AM with the cantata performance beginning just before the closing hymn.',
+    url: 'https://www.emmanuelmusic.org/performance-info/2025-2026-cantata-schedule',
+    image:{
+        path: '/images/EmmanuelEnsemblePhoto.webp',
+        alt: 'Emmanuel Music'
+    },
+    timesLocations: [{
+      time: '2026-02-08T10:00',
+      location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
+    }]
+  },
+    {
+    id: uuid(),
+    title: 'Bach: Ich hatte viel Bekümmernis, BWV 21',
+    ensemble: {
+      name: 'Emmanuel Music',
+      url: 'https://www.emmanuelmusic.org'
+    },
+    role: 'Bass soloist',
+    director: 'Ryan Turner',
+    description: 'Emmanuel Music is one of the only organizations in the world that regularly performs Bach\'s cantatas within the liturgical context for which they were intended. The Sunday Eucharist at Emmanuel Church begins at 10:00 AM with the cantata performance beginning just before the closing hymn.',
+    url: 'https://www.emmanuelmusic.org/performance-info/2025-2026-cantata-schedule',
+    image:{
+        path: '/images/EmmanuelEnsemblePhoto.webp',
+        alt: 'Emmanuel Music'
+    },
+    timesLocations: [{
+      time: '2026-03-08T10:00',
+      location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
+    }]
+  },
+      {
+    id: uuid(),
+    title: 'Bach: Halt im Gedächtnis Jesum Christ, BWV 67',
+    ensemble: {
+      name: 'Emmanuel Music',
+      url: 'https://www.emmanuelmusic.org'
+    },
+    role: 'Bass soloist',
+    director: 'Ryan Turner',
+    description: 'Emmanuel Music is one of the only organizations in the world that regularly performs Bach\'s cantatas within the liturgical context for which they were intended. The Sunday Eucharist at Emmanuel Church begins at 10:00 AM with the cantata performance beginning just before the closing hymn.',
+    url: 'https://www.emmanuelmusic.org/performance-info/2025-2026-cantata-schedule',
+    image:{
+        path: '/images/EmmanuelEnsemblePhoto.webp',
+        alt: 'Emmanuel Music'
+    },
+    timesLocations: [{
+      time: '2026-04-05T10:00',
+      location: ['Emmanuel Church', '15 Newbury Street', 'Boston, MA'],
+    }]
+  },
+  {
+    id: uuid(),
     title: 'Bach: Ich freue mich in dir, BWV 133',
     ensemble: {
       name: 'Emmanuel Music',
