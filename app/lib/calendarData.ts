@@ -564,5 +564,26 @@ export const events: Event[] = [
         location: ['The Breakers', '44 Ochre Point Avenue', 'Newport, RI']
       }
     ]
+  },
+    {
+    id: uuid(),
+    title: 'The Light of Monteverdi',
+        ensemble: {
+        name: 'Washington Bach Consort',
+        url: 'http://www.bachconsort.org',
+    },
+    director: 'Dana Marsh',
+    description: 'Among the most celebrated works in Western musical history, Vespro della Beata Vergine (1610) was dedicated to Pope Paul V at a moment when Claudio Monteverdi was aiming to make a quantum leap in his career prospects. After 20 years in the service of the illustrious Duke of Mantua, Monteverdi\'s Marian vespers was published only three years before his star rose to the great Basilica of San Marco in Venice, where he famously served as music director for 30 years.',
+    url: 'https://bachconsort.org/events/the-light-of-monteverdi/',
+        image: {
+        path: '/images/BachConsort.webp',
+        alt: 'Washington Bach Consort'
+    },
+    timesLocations: [
+      {
+        time: '2026-03-22T16:00',
+        location: ['National Presbyterian Church', '4101 Nebraska Avenue NW', 'Washington, DC']
+      }
+    ]
   }
 ]
